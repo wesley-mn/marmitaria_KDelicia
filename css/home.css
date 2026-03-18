@@ -1,0 +1,82 @@
+/*class usada para mexer na imagem principal do home*/ 
+.background {
+    width: 801px;
+    height: auto;
+    opacity: 100%;
+    position: absolute;
+    top: 0px;
+    margin-left: -300px;
+}
+/*class usada para mexer no tamanho e espaçamento do menu  */
+.menu,ul,li {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 14px 58px;
+}
+/*class usada para determinar tamanho do espaço na imagem*/
+.section {
+    width: 40%;
+    height: auto;
+    left: 300px;
+    position: relative;
+}
+/*class usada para adicionar cor,títulos e fonte*/
+.aside {
+    background-color: #fcf1b7;
+    width: 1145px;
+    height: 539px;
+    left: 800px;
+    top: -40px;
+    font-size: xxx-large;
+    color: #815d38;
+    position: relative;
+}
+/*class usada para ser a primeira sílaba do nome "marmitaria" */
+.mar{
+    margin-top: 40px !important;
+    margin-left: -102px;
+    padding: 150px;
+}
+/*class usada para ser a segunda e terceira sílaba do nome "marmitaria"*/
+.mita{
+    margin-top: -420px !important;
+    margin-left: -137px;
+    padding: 185px;
+}
+/*class usada para ser a última sílaba do nome "marmitaria"*/
+.ria{
+    margin-top: -455px !important;
+    margin-left: -137px;
+    padding: 185px;
+}
+/*class usada para mexer na primeira foto secundária*/
+.home1{
+    width: 200px;
+    height: auto;
+    opacity: 100%;
+    top: -325px;
+    margin-left: 465px;
+    position: relative;
+}
+/*class usada para mexer na segunda foto secundária*/
+.home2{
+    width: 235px;
+    height: auto;
+    opacity: 100%;
+    top: -555px;
+    margin-left: -120px;
+    position: relative;
+}
+/*class usada para mexer na terceira foto secundária*/
+.home3{
+    width: 210px;
+    height: auto;
+    opacity: 100%;
+    top: -570px;
+    margin-left: 705px;
+    position: relative;
+}

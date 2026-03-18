@@ -1,0 +1,51 @@
+/*class usada para mexer no tamanho e lagura da página*/
+.container {
+    width: 100%;
+    height: 98%;
+    position: absolute;
+    color: #fcf1b7;
+}
+
+/*usamos a classe logo para mexer */
+.logo {
+    width: 8%;
+    margin-left: 12px;
+}
+
+/* aqui é o header que usaremos depois de configurarmos o nav */
+.header {
+    background-color: #5a1414;
+    width: 1945px;
+    height: 162px;
+    position: relative;
+}
+
+
+/* aqui é onde configuramos o menu do nosso site */
+.menu {
+    font-family: "Playfair Display", serif;
+    font-weight: weight;
+    text-transform: uppercase;
+    width: 85%;
+    float: right;
+    position: relative;
+    top: 5px;
+    font-size: xxx-large;
+
+}
+/*lass para mexer na altura e cor no menu*/
+.menu ul li {
+    height: 30px;
+    color: #fcf1b7;
+}
+/*class usada para mexer no tamanho e cor do rodapé*/
+.footer {
+    background-color: rgb(90, 20, 2);
+    width: 1905px;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    font-size: x-large;
+}

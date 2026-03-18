@@ -1,0 +1,251 @@
+/*class usada para mexer no menu*/
+.principal{
+    height: 30px;
+    color: #fcf1b7;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: -300px;
+    margin: 14px 58px;
+}
+
+/*class usada para a descrição da salada*/
+.desc{
+    font-size: x-large;
+    color: white;
+    margin-left: 290px;
+    margin-top: 15px;
+}
+
+/*class usada para colocar título salada*/
+.tit1{
+    font-size: x-large;
+    color: white;
+    margin-left: -60px;
+    margin-top: -230px;
+}
+
+/*class usada para a descrição da marmita  fitness*/
+.desc2{
+    font-size: x-large;
+    color: white;
+    margin-left: 290px;
+    margin-top: 15px;
+}
+
+/*class usada para colocar o título fitness*/
+.tit2{
+    font-size: x-large;
+    color: white;
+    margin-left: -60px;
+    margin-top: -230px;
+}
+
+/*class usada para a descrição tradicional*/
+.desc3{
+    font-size: x-large;
+    color: white;
+    margin-left: 280px;
+    margin-top: 20px;  
+}
+
+/*class usada para colocar o título tradicional*/
+.tit3{
+    font-size: x-large;
+    color: white;
+    margin-left: -55px;
+    margin-top: -244px;
+}
+
+/*class usada para a descrição gourmet*/
+.desc4{
+    font-size: x-large;
+    color: white;
+    margin-left: 280px;
+    margin-top: 15px;  
+}
+
+/*class usada para colocar  o título gourmet*/
+.tit4{
+    font-size: x-large;
+    color: white;
+    margin-left: -55px;
+    margin-top: -244px;
+}
+
+/*class usada para a descrição especial*/
+.desc5{
+    font-size: x-large;
+    color: white;
+    margin-left: 295px;
+    margin-top: 35px;  
+}
+
+/*class usada para colocar o título especial*/
+.tit5{
+    font-size: x-large;
+    color: white;
+    margin-left: -60px;
+    margin-top: -244px;
+}
+
+/*class usada para a descrição de bebidas*/
+.desc6{
+    font-size: x-large;
+    color: white;
+    margin-left: 263px;
+    margin-top: -200px;  
+}
+
+/*class usada para colocar o título bebidas*/
+.tit6{
+    font-size: x-large;
+    color: white;
+    margin-left: -35px;
+    margin-top: 20px;
+}
+
+/*class usadda para mexer na imagem da salada*/
+.salada{
+    width: 230px;
+    height: auto;
+    margin-left: 25px;
+    opacity: 100%;
+}
+
+/*class usada para mexer na imagem da marmita fitness*/
+.fitness{
+    width: 230px;
+    height: auto;
+    opacity: 100%;
+    margin-left: 25px;
+}
+
+/*class usada para mexer na imagem das bebidas */
+.bebidas{
+    width: 230px;
+    height: auto;
+    opacity: 100%;
+    margin-left: 25px;
+    margin-top: 43px;
+}
+
+/*class usada para mexer na imagem da  marmita gourmet*/
+.gourmet{
+    width: 230px;
+    height: auto;
+    opacity: 100%;
+    margin-left: 25px;  
+}
+
+/*class usada para mexer na imagem da marmita tradicional */
+.tradicional{
+    width: 230px;
+    height: auto;
+    margin-left: 25px;
+    opacity: 100%;
+}
+
+/*class usada para mexer na imagem da marmita especial*/
+.special{
+    width: 230px;
+    height: auto;
+    opacity: 100%;
+    margin-left: 25px;
+}
+
+/*class usada para na cor do fundo do site */
+.section{
+    background-color: #fcf1b7;
+    width: 1945px;
+    height: 720px;
+    font-size: xx-large;
+    color: #815d38;
+    position: relative
+}
+
+/*class usada para mexer no tamanho da tabela*/
+.aside_table{
+    width: 0px;
+    position: absolute;
+    left: 30px;
+    top: 230px;
+}
+
+/*class usada  para colocar cor da fonte e cor da borda*/
+.table, th, td{
+    border: 4px solid #5a1414;
+    padding: 5px;
+    color: #815d38;
+}
+
+/*class usada para colocar cardápio salada */
+.aside{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 390px;
+    position: absolute;
+    top: 240px;
+}
+/*class usada para colocar cardápio fitness*/
+.aside2{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 910px;
+    position: absolute;
+    top: 240px;
+}
+/*class usada para colocar cardápio tradicional*/
+.aside3{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 1430px;
+    position: absolute;
+    top: 240px;
+}
+
+/*class usada para colocar cardápio gourmet */
+.aside4{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 390px;
+    position: absolute;
+    top: 525px;
+}
+
+/*class usada para colocar  cardápio especial*/
+.aside5{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 910px;
+    position: absolute;
+    top: 525px;
+}
+/*class usada para colocar as bebidas*/
+.aside6{
+    background-color: #5a1414;
+    width: 490px;
+    height: 230px;
+    color: white;
+    border-radius: 25px;
+    margin-left: 1430px;
+    position: absolute;
+    top: 525px;
+}

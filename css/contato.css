@@ -1,0 +1,198 @@
+/*usado para mexer no menu*/
+.principal{
+    height: 30px;
+    color: #fcf1b7;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: -300px;
+    margin: 14px 58px;
+}
+
+/*usado para adicionar cor no fundo*/
+.section{
+    background-color: #fcf1b7;
+    width: 1945px;
+    height: 670px;
+    position: relative;
+}
+
+/*usado para adicionar cor na fonte e tamanho*/
+.aside{
+    background-color: #5a1402;
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    position: absolute;
+    font-size: x-large;
+    color: #815d38;
+}
+
+/*usado para mexer na borda do formulario*/
+.field{
+    padding: 35px;
+    margin-top: -655px;
+    margin-left: 55px;
+    border-color: #5a1402;
+}
+
+/*usado para mexer no titulo localizacao*/
+.tit1{
+    margin-left: 1384px;
+    margin-top: -570px;
+}
+
+/*usado para mexer no titulo rede social*/
+.tit2{
+    margin-left: 810px;
+    margin-top: -495px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 1*/
+.loc1{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 1385px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 2*/
+.loc2{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 1630px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 3*/
+.loc3{
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 1142px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 4*/
+.loc4{
+    width: 200px;
+    height: auto;
+    margin-top: 260px;
+    margin-left: 1145px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 5*/
+.loc5{
+    width: 200px;
+    height: auto;
+    margin-top: 260px;
+    margin-left: 1385px;
+    position: absolute;
+}
+
+/*usado para mexer na localizacao 6*/
+.loc6{
+    width: 200px;
+    height: auto;
+    margin-top: 262px;
+    margin-left: 1630px;
+    position: absolute;
+}
+
+/*usado para mexer no titulo localizacao 1*/
+.l1{
+    margin-top: 205px;
+    margin-left: 1700px;
+}
+
+/*usado para mexer no titulo localizacao 2*/
+.l2{
+    margin-top: -60px;
+    margin-left: 1436px;
+}
+
+/*usado para mexer no titulo localizacao 3*/
+.l3{
+    margin-top: -60px;
+    margin-left: 1200px;
+}
+
+/*usado para mexer no titulo localizacao 4*/
+.l4{
+    margin-top: 162px;
+    margin-left: 1678px;
+}
+
+/*usado para mexer no titulo localizacao 5*/
+.l5{
+    margin-top: -60px;
+    margin-left: 1430px;
+}
+
+/*usado para mexer no titulo localizacao 6*/
+.l6{
+    margin-top: -60px;
+    margin-left: 1200px;;
+}
+
+/*usado para mexer na imagem do insta*/
+.insta{
+    width: 180px;
+    height: auto;
+    margin-top: -380px;
+    margin-left: 615px;
+    border-radius: 40px;
+    position: absolute;
+}
+
+/*usado para mexer no titulo instagram*/
+.tit_insta{
+    margin-top: -185px;
+    margin-left: 600px;
+    position: absolute;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+/*usado para mexer na imagem whatsapp*/
+.whatsapp{
+    width: 200px;
+    height: auto;
+    margin-top: -390px;
+    margin-left: 855px;
+    position: absolute;
+ 
+}
+
+/*usado para mexer no titulo whatsapp*/
+.tit_wpp{
+    margin-top: -185px;
+    margin-left: 895px;
+    position: absolute;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+/*usado para mexer na fonte nos dois titulos */
+.tit_insta, .tit_wpp{
+    color: #815d38;
+}
+
+/*usado para mexer no rodape do site*/
+.footer {
+    background-color: rgb(90, 20, 2);
+    color: #fcf1b7;
+    width: 1908px;
+    height: 50px;
+    padding: 20px;
+    position: absolute;
+    margin-left: -21px;
+    text-align: center;
+    font-size: x-large;
+}

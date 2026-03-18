@@ -1,0 +1,81 @@
+/*usado para o menu do site*/
+.principal{
+    height: 30px;
+    color: #fcf1b7;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: -300px;
+    margin: 14px 58px;
+}
+
+/*usado para cor de fundo*/
+.section{
+    background-color: #fcf1b7;
+    width: 1945px;
+    height: 539px;
+    position: relative;
+}
+
+/*usado para mexer no primeiro paragrafo*/
+.par1{
+    width: 420px;
+    height: auto;
+    margin-top: -415px;
+    margin-left: 325px;
+    position: relative
+}
+
+/*usado para mexer no segundo paragrafo*/
+.par2{
+    width: 420px;
+    height: auto;
+    margin-top: 25px;
+    margin-left: 323px;
+    position: relative;
+}
+
+/*usado para mexer no terceiro paragrafo*/
+.par3{
+    width: 895px;
+    height: auto;
+    margin-top: 85px;
+    margin-left: 490px;
+    position: relative;
+}
+
+/*usado para mexer na fonte e na cor da mesma*/
+.aside{
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    font-size: x-large;
+    color: #382511;
+}
+
+/*usado para mexer na imagem*/
+.restaurante{
+    width: 510px;
+    height: auto;
+    opacity: 100%;
+    right: 355px;
+    top: 75px;
+    position: absolute;
+}
+
+/*usado para mexer no rodape*/
+.footer {
+    background-color: rgb(90, 20, 2);
+    color: #fcf1b7;
+    width: 1908px;
+    height: 50px;
+    padding: 20px;
+    position: relative;
+    margin-left: -21px;
+    top: 11px;
+    text-align: center;
+    font-size: x-large;
+}
