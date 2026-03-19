@@ -28,7 +28,7 @@
 .aside {
     background-color: #fcf1b7;
     width: 1145px;
-    height: 539px;
+    height: auto;
     left: 800px;
     top: -40px;
     font-size: xxx-large;
