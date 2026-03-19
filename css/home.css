@@ -1,11 +1,10 @@
 /*class usada para mexer na imagem principal do home*/ 
 .background {
-    width: 801px;
+   width: 100%;
     height: auto;
     opacity: 100%;
-    position: absolute;
-    top: 0px;
-    margin-left: -300px;
+    z-index: 1;
+    margin: 0px 0px 0px -300px;
 }
 /*class usada para mexer no tamanho e espaçamento do menu  */
 .menu,ul,li {
@@ -15,7 +14,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 14px 58px;
+    margin: -70px 58px;
 }
 /*class usada para determinar tamanho do espaço na imagem*/
 .section {
@@ -27,10 +26,8 @@
 /*class usada para adicionar cor,títulos e fonte*/
 .aside {
     background-color: #fcf1b7;
-    width: 1145px;
+    width: 100%;
     height: auto;
-    left: 800px;
-    top: -40px;
     font-size: xxx-large;
     color: #815d38;
     position: relative;
