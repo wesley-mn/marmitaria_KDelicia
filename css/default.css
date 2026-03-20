@@ -2,6 +2,7 @@
 .container {
     width: 98%;
     height: auto;
+    margin: 0%auto;
     position: absolute;
     color: #ffffff;
 }
@@ -14,17 +15,17 @@
 
 /* Estilos Gerais (Desktop) */
 header {
-    position: absolute;
+    position: fixed;
     width: 92%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 0px 0px -8px;
     padding: 10px 5%;
     background-color: #5a1414;
     z-index: 1000;
+    top: 0;
+    left: 0
 }
-
 .hamburger {
     display: none; /* Escondido no PC */
     cursor: pointer;
@@ -71,7 +72,7 @@ header {
 
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
-    font-family: "Playfair Display", serif;
+    font-family: 'Georgia', serif;
     text-transform: uppercase;
     width: 85%;
     float: right;
@@ -95,97 +96,85 @@ header {
     height: 30px;
     color: #ffffff;
 }
-/*class usada para mexer no tamanho e cor do rodapé*/
-.footer {
+/*id usado para mexer no rodape da pagina*/
+#footer{
     background-color: #5a1414;
-    width: 95%;
-    height: auto;
-    margin: 0px 0px 0px -8px;
-    position: absolute;
-    top: 639px;
-    text-align: center;
-    font-size: x-large;
+    width: 102%;
+    margin-top: 1500px;
+    margin-left: -8px;
+    border-bottom: 1px solid rgb(225, 222, 222);
+}
+/*id usado para nas legendas do rodape*/
+#footer a {
+    text-decoration: none;
+    color: inherit;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo1{
     margin: 15px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo2{
     margin: 45px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo3{
     margin: 65px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo4{
     margin: 85px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo5{
     margin: 115px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo6{
     margin: 145px 0px 0px 15px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo7{
     margin: 15px 0px 0px 615px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo8{
     margin: 45px 0px 0px 615px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo9{
     margin: 85px 0px 0px 615px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo10{
     margin: 115px 0px 0px 615px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo11{
     margin: 145px 0px 0px 615px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo12{
-    margin: 15px 0px 0px 1135px;
-    text-decoration: none;
-    position: absolute;
+    margin: 15px 0px 0px 1135px;;
+    position: relative;
 }/*id usado para mexer na legenda do rodape*/
 #foo13{
     margin: 45px 0px 0px 1135px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo14{
     margin: 85px 0px 0px 1135px;
-    text-decoration: none;
-    position: absolute;
+    position: relative;
 }
