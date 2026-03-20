@@ -41,35 +41,6 @@ header {
     margin: 5px 0;
 }
 
-/* --- Media Query para Mobile --- */
-@media (max-width: 768px) {
-    .hamburger {
-        display: block; /* Aparece no Celular */
-    }
-
-    nav {
-        position: fixed;
-        top: 0;
-        right: -100%; /* Esconde o menu para fora da tela (direita) */
-        width: 70%;
-        height: 100vh;
-        background-color: #5e1515;
-        transition: 0.3s; /* Animação suave ao abrir */
-        padding-top: 80px;
-    }
-
-    /* Classe que o JS vai adicionar para mostrar o menu */
-    nav.active {
-        right: 0; 
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-}
-
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
     font-family: 'Georgia', serif;
@@ -111,70 +82,71 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo1{
-    margin: 15px 0px 0px 15px;
-    position: relative;
+    margin: 25px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo2{
-    margin: 45px 0px 0px 15px;
-    position: relative;
+    margin: 50px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo3{
-    margin: 65px 0px 0px 15px;
-    position: relative;
+    margin: 75px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo4{
-    margin: 85px 0px 0px 15px;
-    position: relative;
+    margin: 100px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo5{
-    margin: 115px 0px 0px 15px;
-    position: relative;
+    margin: 125px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo6{
-    margin: 145px 0px 0px 15px;
-    position: relative;
+    margin: 150px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo7{
-    margin: 15px 0px 0px 615px;
-    position: relative;
+    margin: 175px 0px 0px 200px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo8{
-    margin: 45px 0px 0px 615px;
-    position: relative;
+    margin: 25px 0px 0px 650px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo9{
-    margin: 85px 0px 0px 615px;
-    position: relative;
+    margin: 50px 0px 0px 650px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo10{
-    margin: 115px 0px 0px 615px;
-    position: relative;
+    margin: 75px  0px 0px 650px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo11{
-    margin: 145px 0px 0px 615px;
-    position: relative;
+    margin: 100px 0px 0px 650px;
+    position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo12{
-    margin: 15px 0px 0px 1135px;;
-    position: relative;
-}/*id usado para mexer na legenda do rodape*/
+    margin: 125px 0px 0px 1135px;;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
 #foo13{
-    margin: 45px 0px 0px 1135px;
+    margin: 150px 0px 0px 1135px;
     position: relative;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo14{
-    margin: 85px 0px 0px 1135px;
+    margin: 175px 0px 0px 1135px;
     position: relative;
 }
