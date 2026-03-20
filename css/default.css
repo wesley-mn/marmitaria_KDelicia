@@ -1,9 +1,9 @@
 /*class usada para mexer no tamanho e lagura da página*/
 .container {
-    width: 100%;
+    width: 98%;
     height: auto;
     position: absolute;
-    color: #fcf1b7;
+    color: #ffffff;
 }
 
 /*usamos a classe logo para mexer */
@@ -12,40 +12,180 @@
     margin-left: 12px;
 }
 
-/* aqui é o header que usaremos depois de configurarmos o nav */
-.header {
+/* Estilos Gerais (Desktop) */
+header {
+    position: absolute;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 0px -8px;
+    padding: 10px 5%;
     background-color: #5a1414;
-    width: 100%;
-    height: auto;
-    position: relative;
+    z-index: 1000;
 }
 
+.hamburger {
+    display: none; /* Escondido no PC */
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #f1d3a1;
+    margin: 5px 0;
+}
+
+/* --- Media Query para Mobile --- */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block; /* Aparece no Celular */
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Esconde o menu para fora da tela (direita) */
+        width: 70%;
+        height: 100vh;
+        background-color: #5e1515;
+        transition: 0.3s; /* Animação suave ao abrir */
+        padding-top: 80px;
+    }
+
+    /* Classe que o JS vai adicionar para mostrar o menu */
+    nav.active {
+        right: 0; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
 
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
     font-family: "Playfair Display", serif;
-    font-weight: weight;
     text-transform: uppercase;
     width: 85%;
     float: right;
     position: relative;
     top: 5px;
-    font-size: xxx-large;
+    font-size: 40px;
 
+}
+/*class usada para mexer no tamanho e espaçamento do menu*/
+.menu,ul,li {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -80px 58px;
 }
 /*lass para mexer na altura e cor no menu*/
 .menu ul li {
     height: 30px;
-    color: #fcf1b7;
+    color: #ffffff;
 }
 /*class usada para mexer no tamanho e cor do rodapé*/
 .footer {
-    background-color: rgb(90, 20, 2);
-    width: 1905px;
+    background-color: #5a1414;
+    width: 95%;
     height: auto;
-    padding: 20px;
-    position: relative;
-    top: -60px;
+    margin: 0px 0px 0px -8px;
+    position: absolute;
+    top: 639px;
     text-align: center;
     font-size: x-large;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo1{
+    margin: 15px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo2{
+    margin: 45px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo3{
+    margin: 65px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo4{
+    margin: 85px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo5{
+    margin: 115px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo6{
+    margin: 145px 0px 0px 15px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo7{
+    margin: 15px 0px 0px 615px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo8{
+    margin: 45px 0px 0px 615px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo9{
+    margin: 85px 0px 0px 615px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo10{
+    margin: 115px 0px 0px 615px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo11{
+    margin: 145px 0px 0px 615px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo12{
+    margin: 15px 0px 0px 1135px;
+    text-decoration: none;
+    position: absolute;
+}/*id usado para mexer na legenda do rodape*/
+#foo13{
+    margin: 45px 0px 0px 1135px;
+    text-decoration: none;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo14{
+    margin: 85px 0px 0px 1135px;
+    text-decoration: none;
+    position: absolute;
 }
