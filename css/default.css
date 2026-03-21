@@ -26,20 +26,6 @@ header {
     top: 0;
     left: 0
 }
-.hamburger {
-    display: none; /* Escondido no PC */
-    cursor: pointer;
-    background: none;
-    border: none;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #f1d3a1;
-    margin: 5px 0;
-}
 
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
@@ -117,36 +103,54 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo8{
-    margin: 25px 0px 0px 650px;
+    margin: 25px 0px 0px 840px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
-#foo9{
-    margin: 50px 0px 0px 650px;
+.insta{
+    width: 3%;
+    height: auto;
+    margin-top: 60px;
+    margin-left: 875px;
+    border-radius: 10px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo10{
-    margin: 75px  0px 0px 650px;
+/*usado para mexer na imagem whatsapp*/
+.whatsapp{
+    width: 63px;
+    height: auto;
+    margin-top: 115px;
+    margin-left: 870px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo11{
-    margin: 100px 0px 0px 650px;
+    margin: 150px 0px 0px 650px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo12{
-    margin: 125px 0px 0px 1135px;;
+    margin: 25px 0px 0px 1365px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo13{
-    margin: 150px 0px 0px 1135px;
-    position: relative;
+/*classe usada para mexer nas formas de pagamento*/
+.visa{
+    width: 80px;
+    position: absolute;
+    margin: 60px 0px 0px 1430px;
+    border-radius: 5px;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo14{
-    margin: 175px 0px 0px 1135px;
+/*classe usada para mexer nas formas de pagamento*/
+.pix{
+    width: 80px;
     position: relative;
+    margin: 95px 0px 0px 1430px;
+    border-radius: 5px;
+}
+/*classe usada para mexer nas formas de pagamento*/
+.mastercard{
+    width: 71px;
+    position: relative;
+    margin: 5px 0px 0px 1435px;
+    border-radius: 5px;
 }

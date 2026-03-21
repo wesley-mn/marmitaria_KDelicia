@@ -10,7 +10,7 @@
     border-right-style: inset;
     border-left-style: outset;
     border-top-style: outset;
-    border-color: #C26667;;
+    border-color: #C26667;
 }
 /*class usada para determinar tamanho do espaço na imagem*/
 .section {
@@ -80,4 +80,16 @@
     top: 60px;
     margin: 0px 0px 0px 20px;
     position: relative;
+}
+.fitness{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    margin: 325px 0px 0px -1235px;
+    border-radius: 20px;
+    border-bottom-style: inset;
+    border-right-style: inset;
+    border-left-style: outset;
+    border-top-style: outset;
+    border-color: #C26667;
 }
