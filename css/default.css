@@ -16,7 +16,7 @@
 /* Estilos Gerais (Desktop) */
 header {
     position: fixed;
-    width: 92%;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@ header {
     float: right;
     position: relative;
     top: 5px;
-    font-size: 40px;
+    font-size: 20px;
 
 }
 /*class usada para mexer no tamanho e espaçamento do menu*/
@@ -46,7 +46,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -80px 58px;
+    margin: -80px 50px;
 }
 /*lass para mexer na altura e cor no menu*/
 .menu ul li {

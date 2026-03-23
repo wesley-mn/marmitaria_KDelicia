@@ -1,3 +1,19 @@
+.titulo {
+    font-family: 'Georgia', serif;
+    font-size: 95px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    margin-left: 900px;
+    font-weight: normal;
+}
+/*class usada para estilizar a linha decorativa" */
+.linha-decorativa {
+    height: 6px;
+    width: 100px;
+    margin: 0px 0px 0px 905px;
+    background: linear-gradient(to right, #a38656, rgba(163, 134, 86, 0));
+    border-radius: 10px;
+}
 /*class usada para a descrição da salada*/
 .desc{
     font-size: x-large;
