@@ -29,7 +29,7 @@ header {
 
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
-    font-family: 'Georgia', serif;
+    font-size: "Agency FB";
     text-transform: uppercase;
     width: 85%;
     float: right;
