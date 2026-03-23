@@ -1,16 +1,3 @@
-/*class usada para mexer no menu*/
-.principal{
-    height: 30px;
-    color: #fcf1b7;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: -300px;
-    margin: 14px 58px;
-}
-
 /*class usada para a descrição da salada*/
 .desc{
     font-size: x-large;
@@ -157,13 +144,12 @@
 }
 
 /*class usada para na cor do fundo do site */
-.section{
-    background-color: #fcf1b7;
-    width: 1945px;
-    height: 720px;
-    font-size: xx-large;
-    color: #815d38;
-    position: relative
+.section {
+    background-color: #7a1f1f;
+    width: 102%;
+    height: 1356px;
+    margin: 144px 0px 0px -8px;
+    position: absolute;
 }
 
 /*class usada para mexer no tamanho da tabela*/
