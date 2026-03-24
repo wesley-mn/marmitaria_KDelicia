@@ -84,10 +84,10 @@
     position: relative;
 }
 .fitness{
-    width: 50%;
+    width: 40%;
     height: auto;
     position: absolute;
-    margin: 325px 0px 0px -1235px;
+    margin: 325px 0px 0px 0px;
     border-radius: 20px;
     border-bottom-style: inset;
     border-right-style: inset;
