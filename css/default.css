@@ -24,18 +24,14 @@ header {
     background-color: #5a1414;
     z-index: 1000;
     top: 0;
-    left: 0
+    left: 0;
+    box-shadow: 0 4px 20px rgba(80, 10, 20, 0.6);
 }
 
 /* aqui é onde configuramos o menu do nosso site */
 .menu {
-    font-size: "Agency FB";
-    text-transform: uppercase;
-    width: 85%;
-    float: right;
-    position: relative;
-    top: 5px;
-    font-size: 20px;
+    font-family: "Bauhaus 93";
+    font-size: xx-large;
 
 }
 /*class usada para mexer no tamanho e espaçamento do menu*/
@@ -46,7 +42,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: -80px 50px;
+    margin: -80px 34px;
 }
 /*lass para mexer na altura e cor no menu*/
 .menu ul li {
@@ -57,7 +53,7 @@ header {
 #footer{
     background-color: #5a1414;
     width: 102%;
-    margin-top: 1500px;
+    margin-top: 1455px;
     margin-left: -8px;
     border-bottom: 1px solid rgb(225, 222, 222);
 }
@@ -137,20 +133,20 @@ header {
 .visa{
     width: 80px;
     position: absolute;
-    margin: 60px 0px 0px 1430px;
+    margin: 60px 0px 0px 1088px;
     border-radius: 5px;
 }
 /*classe usada para mexer nas formas de pagamento*/
 .pix{
     width: 80px;
     position: relative;
-    margin: 95px 0px 0px 1430px;
+    margin: 95px 0px 0px 1088px;
     border-radius: 5px;
 }
 /*classe usada para mexer nas formas de pagamento*/
 .mastercard{
     width: 71px;
     position: relative;
-    margin: 5px 0px 0px 1435px;
+    margin: 5px 0px 0px 1088px;
     border-radius: 5px;
 }
