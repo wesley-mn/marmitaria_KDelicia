@@ -70,24 +70,24 @@
     width: 210px;
     height: auto;
     opacity: 100%;
-    top: 60px;
-    margin: 0px 0px 0px 20px;
-    position: relative;
+    top: 265px;
+    margin: 0px 0px 0px -42px;
+    position: absolute;
 }
 /*class usada para mexer na terceira foto secundária*/
 .home3{
     width: 210px;
     height: auto;
     opacity: 100%;
-    top: 60px;
-    margin: 0px 0px 0px 20px;
-    position: relative;
+    top: 243px;
+    margin: 0px 0px 0px -412px;
+    position: absolute;
 }
 .fitness{
-    width: 40%;
+    width: 65%;
     height: auto;
     position: absolute;
-    margin: 325px 0px 0px 0px;
+    margin: 370px 0px 0px -935px;
     border-radius: 20px;
     border-bottom-style: inset;
     border-right-style: inset;
