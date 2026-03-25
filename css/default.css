@@ -64,23 +64,22 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo1{
-    margin: 25px 0px 0px 200px;
+    margin: 25px 0px 0px 55px;
     position: absolute;
-    font-family: "font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 /*id usado para mexer na legenda do rodape*/
 #foo2{
-    margin: 50px 0px 0px 200px;
+    margin: 55px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo3{
-    margin: 75px 0px 0px 200px;
+    margin: 75px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo4{
-    margin: 100px 0px 0px 200px;
+    margin: 95px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
@@ -105,7 +104,7 @@ header {
     font-family: "font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 /*id usado para mexer na legenda do rodape*/
-.icone{
+.insta{
     width: 3%;
     height: auto;
     margin-top: 60px;
@@ -120,6 +119,7 @@ header {
     margin-top: 115px;
     margin-left: 870px;
     position: absolute;
+    border-radius: 35px;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo11{
@@ -128,9 +128,8 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo12{
-    margin: 25px 0px 0px 1365px;
-    position: absolute;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 25px 0px 0px 1017px;
+    position: absolute;;
 }
 /*legenda dos horarios*/
 footer p{
