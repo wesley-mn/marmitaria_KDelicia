@@ -49,6 +49,14 @@ header {
     height: 30px;
     color: #ffffff;
 }
+/*class usada para determinar tamanho do espaço na imagem*/
+.section {
+    background-color: #914a4a;
+    width: 102%;
+    height: 1356px;
+    margin: 100px 0px 0px -8px;
+    position: absolute;
+}
 /*id usado para mexer no rodape da pagina*/
 #footer{
     background-color: #5a1414;
@@ -84,40 +92,39 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo5{
-    margin: 125px 0px 0px 200px;
+    margin: 115px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo6{
-    margin: 150px 0px 0px 200px;
+    margin: 135px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo7{
-    margin: 175px 0px 0px 200px;
+    margin: 155px 0px 0px 55px;
     position: absolute;
 }
 /*id usado para mexer na legenda do rodape*/
 #foo8{
-    margin: 25px 0px 0px 625px;
+    margin: 25px 0px 0px 350px;
     position: absolute;
-    font-family: "font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif";
 }
 /*id usado para mexer na legenda do rodape*/
 .insta{
-    width: 3%;
+    width: 57px;
     height: auto;
-    margin-top: 60px;
-    margin-left: 875px;
-    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 355px;
+    border-radius: 15px;
     position: absolute;
 }
 /*usado para mexer na imagem whatsapp*/
 .whatsapp{
-    width: 63px;
+    width: 60px;
     height: auto;
-    margin-top: 115px;
-    margin-left: 870px;
+    margin-top: 67px;
+    margin-left: 426px;
     position: absolute;
     border-radius: 35px;
 }
@@ -128,7 +135,7 @@ header {
 }
 /*id usado para mexer na legenda do rodape*/
 #foo12{
-    margin: 25px 0px 0px 1017px;
+    margin: 25px 0px 0px 645px;
     position: absolute;;
 }
 /*legenda dos horarios*/
@@ -139,20 +146,20 @@ footer p{
 .visa{
     width: 80px;
     position: absolute;
-    margin: 60px 0px 0px 1088px;
+    margin: 80px 0px 0px 670px;
     border-radius: 5px;
 }
 /*classe usada para mexer nas formas de pagamento*/
 .pix{
-    width: 80px;
+    width: 75px;
     position: relative;
-    margin: 95px 0px 0px 1088px;
+    margin: 80px 0px 0px 770px;
     border-radius: 5px;
 }
 /*classe usada para mexer nas formas de pagamento*/
 .mastercard{
     width: 71px;
     position: relative;
-    margin: 5px 0px 0px 1088px;
+    margin: 5px 0px 0px 720px;
     border-radius: 5px;
 }

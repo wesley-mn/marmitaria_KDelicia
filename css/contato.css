@@ -1,25 +1,4 @@
-/*usado para mexer no menu*/
-.principal{
-    height: 30px;
-    color: #fcf1b7;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: -300px;
-    margin: 14px 58px;
-}
-
-/*usado para adicionar cor no fundo*/
-.section{
-    background-color: #fcf1b7;
-    width: 1945px;
-    height: 670px;
-    position: relative;
-}
-
-/*usado para adicionar cor na fonte e tamanho*/
+usado para adicionar cor na fonte e tamanho
 .aside{
     background-color: #5a1402;
     width: 50px;
@@ -142,7 +121,7 @@
 }
 
 /*usado para mexer na imagem do insta*/
-.insta{
+.insta_cont{
     width: 5%;
     height: auto;
     margin-top: -380px;
@@ -161,13 +140,12 @@
 }
 
 /*usado para mexer na imagem whatsapp*/
-.whatsapp{
+.whatsapp_cont{
     width: 200px;
     height: auto;
     margin-top: -390px;
     margin-left: 855px;
     position: absolute;
- 
 }
 
 /*usado para mexer no titulo whatsapp*/
@@ -182,17 +160,4 @@
 /*usado para mexer na fonte nos dois titulos */
 .tit_insta, .tit_wpp{
     color: #815d38;
-}
-
-/*usado para mexer no rodape do site*/
-.footer {
-    background-color: rgb(90, 20, 2);
-    color: #fcf1b7;
-    width: 1908px;
-    height: 50px;
-    padding: 20px;
-    position: absolute;
-    margin-left: -21px;
-    text-align: center;
-    font-size: x-large;
 }
