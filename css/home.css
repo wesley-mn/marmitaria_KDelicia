@@ -12,14 +12,6 @@
     border-top-style: outset;
     border-color: #C26667;
 }
-/*class usada para determinar tamanho do espaço na imagem*/
-.section {
-    background-color: #914a4a;
-    width: 102%;
-    height: 1356px;
-    margin: 100px 0px 0px -8px;
-    position: absolute;
-}
 /*class usada para adicionar cor,títulos e fonte*/
 .aside {
     width: 40%;
