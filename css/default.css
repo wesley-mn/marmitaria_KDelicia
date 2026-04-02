@@ -9,7 +9,7 @@
 
 /*usamos a classe logo para mexer */
 .logo {
-    width: 8%;
+    width: 7%;
     margin-left: 12px;
 }
 
@@ -17,6 +17,7 @@
 header {
     position: fixed;
     width: 90%;
+    height: 76px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,9 +54,10 @@ header {
 .section {
     background-color: #914a4a;
     width: 102%;
-    height: 1356px;
+    height: 1367px;
     margin: 100px 0px 0px -8px;
     position: absolute;
+    top: -12px;
 }
 /*id usado para mexer no rodape da pagina*/
 #footer{

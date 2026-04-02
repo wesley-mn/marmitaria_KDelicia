@@ -1,16 +1,3 @@
-/*usado para o menu do site*/
-.principal{
-    height: 30px;
-    color: #fcf1b7;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: -300px;
-    margin: 14px 58px;
-}
-
 /*usado para cor de fundo*/
 .section{
     background-color: #fcf1b7;
