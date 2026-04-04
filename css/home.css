@@ -50,29 +50,29 @@
 }
 /*class usada para mexer na primeira foto secundária*/
 .home1{
-    width: 170px;
+    width: 15%;
     height: auto;
     opacity: 100%;
-    top: 16px;
-    margin-left: 945px;
+    top: 32px;
+    margin-left: 920px;
     position: relative;
 }
 /*class usada para mexer na segunda foto secundária*/
 .home2{
-    width: 170px;
+    width: 15%;
     height: auto;
     opacity: 100%;
-    top: 250px;
-    margin: 0px 0px 0px 30px;
+    top: 265px;
+    margin: 0px 0px 0px 15px;
     position: absolute;
 }
 /*class usada para mexer na terceira foto secundária*/
 .home3{
-    width: 170px;
+    width: 15%;
     height: auto;
     opacity: 100%;
-    top: 250px;
-    margin: 0px 0px 0px -370px;
+    top: 265px;
+    margin: 0px 0px 0px -420px;
     position: absolute;
 }
 .fitness{
@@ -80,10 +80,4 @@
     height: auto;
     position: absolute;
     margin: 370px 0px 0px -900px;
-    border-radius: 20px;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-left-style: outset;
-    border-top-style: outset;
-    border-color: #C26667;
 }

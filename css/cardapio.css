@@ -1,10 +1,8 @@
 /*sobre fundo */
 .vetor_fundo{
-    width: 10%;
-    height: auto;
+    width: 100%;
     position: absolute;
-    margin: 0px 0px 0px 0px;
-    /* opacity: 10%; */
+    opacity: 65%;
 }
 /*class usada para estilizar a palavra "marmitaria" */
 .titulo {
@@ -12,8 +10,8 @@
     font-family: "Berlin Sans FB";
     font-size: 38px;
     letter-spacing: 2px;
-    top: 15px;
-    margin-left: 705px;
+    top: 125px;
+    margin-left: 550px;
     font-weight: normal;
     position: absolute;
 }
