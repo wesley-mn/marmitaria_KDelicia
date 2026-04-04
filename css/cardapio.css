@@ -185,7 +185,7 @@
     height: 230px;
     color: white;
     border-radius: 25px;
-    margin-left: 100px;
+    margin-left: 550px;
     position: absolute;
     top: 240px;
 }
@@ -196,7 +196,7 @@
     height: 230px;
     color: white;
     border-radius: 25px;
-    margin-left: 150px;
+    margin-left: 901px;
     position: absolute;
     top: 240px;
 }
@@ -208,11 +208,10 @@
     height: 230px;
     color: white;
     border-radius: 25px;
-    margin-left: 200px;
+    margin-left: 50px;
     position: absolute;
-    top: 240px;
+    top: 540px;
 }
-
 /*class usada para colocar  cardápio especial*/
 .aside5{
     background-color: #5a1414;
@@ -220,9 +219,9 @@
     height: 230px;
     color: white;
     border-radius: 25px;
-    margin-left: 250px;
+    margin-left: 550px;
     position: absolute;
-    top: 240px;
+    top: 540px;
 }
 /*class usada para colocar as bebidas*/
 .aside6{
@@ -231,7 +230,7 @@
     height: 230px;
     color: white;
     border-radius: 25px;
-    margin-left: 300px;
+    margin-left: 901px;
     position: absolute;
-    top: 240px;
+    top: 540px;
 }
