@@ -10,16 +10,16 @@
     font-family: "Berlin Sans FB";
     font-size: 38px;
     letter-spacing: 2px;
-    top: 125px;
+    top: 135px;
     margin-left: 550px;
     font-weight: normal;
     position: absolute;
 }
 /*class usada para estilizar a linha decorativa" */
 .linha-decorativa {
+    width: 330px;
     height: 6px;
-    width: 230px;
-    margin: 45px 0px 0px 706px;
+    margin: 200px 0px 0px 550px;
     background: linear-gradient(to right, #c26667, rgba(163, 134, 86, 0));
     border-radius: 10px;
 }
