@@ -1,42 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --fonte01: 'Oswald', sans-serif;
+}
+
 /*sobre fundo */
 .vetor_fundo{
     width: 100%;
     position: absolute;
     opacity: 65%;
+    box-shadow: 0 4px 20px rgba(80, 10, 20, 0.6);
 }
 /*class usada para estilizar a palavra "marmitaria" */
 .titulo {
     color: #F5F5F5;
-    font-family: "Berlin Sans FB";
-    font-size: 38px;
+    font-family: var(--fonte01);
+    font-size: 66px;
     letter-spacing: 2px;
-    top: 135px;
-    margin-left: 550px;
+    top: -31px;
+    margin-left: 460px;
     font-weight: normal;
     position: absolute;
 }
-/*class usada para estilizar a linha decorativa" */
-.linha-decorativa {
-    width: 330px;
-    height: 6px;
-    margin: 200px 0px 0px 550px;
-    background: linear-gradient(to right, #c26667, rgba(163, 134, 86, 0));
-    border-radius: 10px;
-}
 /*class usada para a descrição da salada*/
 .desc{
-    font-size: x-large;
+    font-size: larger;
     color: white;
-    margin-left: 290px;
-    margin-top: 15px;
+    margin-left: 270px;
+    margin-top: 50px;
+    position: absolute;
 }
 
 /*class usada para colocar título salada*/
 .tit1{
     font-size: x-large;
     color: white;
-    margin-left: -60px;
-    margin-top: -230px;
+    margin-left: 20px;
+    margin-top: -40px;
+    position: absolute;
+
 }
 
 /*class usada para a descrição da marmita  fitness*/
@@ -118,18 +119,16 @@
     margin-left: -35px;
     margin-top: 20px;
 }
-
-/*class usadda para mexer na imagem da salada*/
-.salada{
-    width: 230px;
+/*class usada para mexer na imagem da marmita tradicional */
+.tradicional{
+    width: 110%;
     height: auto;
-    margin-left: 25px;
-    opacity: 100%;
+    margin: 0px 0px 0px -77px;
+    position: absolute;
 }
-
 /*class usada para mexer na imagem da marmita fitness*/
 .fitness{
-    width: 230px;
+    width: 40%;
     height: auto;
     opacity: 100%;
     margin-left: 25px;
@@ -137,7 +136,7 @@
 
 /*class usada para mexer na imagem das bebidas */
 .bebidas{
-    width: 230px;
+    width: 40%;
     height: auto;
     opacity: 100%;
     margin-left: 25px;
@@ -146,23 +145,14 @@
 
 /*class usada para mexer na imagem da  marmita gourmet*/
 .gourmet{
-    width: 230px;
+    width: 40%;
     height: auto;
     opacity: 100%;
     margin-left: 25px;  
 }
-
-/*class usada para mexer na imagem da marmita tradicional */
-.tradicional{
-    width: 230px;
-    height: auto;
-    margin-left: 25px;
-    opacity: 100%;
-}
-
 /*class usada para mexer na imagem da marmita especial*/
 .special{
-    width: 230px;
+    width: 40%;
     height: auto;
     opacity: 100%;
     margin-left: 25px;
@@ -170,8 +160,8 @@
 /*class usada para colocar cardápio salada */
 .aside{
     background-color: #5a1414;
-    width: 310px;
-    height: 230px;
+    width: 300px;
+    height: 210px;
     color: white;
     border-radius: 25px;
     margin-left: 50px;
