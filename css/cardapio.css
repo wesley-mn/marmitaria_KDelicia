@@ -21,20 +21,20 @@
     font-weight: normal;
     position: absolute;
 }
-/*class usada para a descrição da salada*/
+/*class usada para a descrição do tradicional*/
 .desc{
     font-size: larger;
     color: white;
-    margin-left: 270px;
-    margin-top: 50px;
+    margin-left: 250px;
+    margin-top: 40px;
     position: absolute;
 }
 
-/*class usada para colocar título salada*/
+/*class usada para colocar título no tradicional*/
 .tit1{
     font-size: x-large;
     color: white;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-top: -40px;
     position: absolute;
 
@@ -127,11 +127,11 @@
     position: absolute;
 }
 /*class usada para mexer na imagem da marmita fitness*/
-.fitness{
-    width: 40%;
+.carne{
+    width: 110%;
     height: auto;
     opacity: 100%;
-    margin-left: 25px;
+    margin: 0px 0px 0px -77px;
 }
 
 /*class usada para mexer na imagem das bebidas */
@@ -171,8 +171,8 @@
 /*class usada para colocar cardápio fitness*/
 .aside2{
     background-color: #5a1414;
-    width: 310px;
-    height: 230px;
+    width: 300px;
+    height: 210px;
     color: white;
     border-radius: 25px;
     margin-left: 550px;
