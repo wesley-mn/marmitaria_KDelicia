@@ -52,7 +52,7 @@ header {
 }
 /*class usada para determinar tamanho do espaço na imagem*/
 .section {
-    background-color: #914a4a;
+    background-color: burlywood;
     width: 102%;
     height: 1367px;
     margin: 100px 0px 0px -8px;

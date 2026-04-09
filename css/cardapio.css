@@ -39,7 +39,18 @@
 
 /* Card individual */
 .card {
-    background: #f4e6d3;
+    background: rgba(255, 255, 255, 0.2); 
+    
+    /* 2. O efeito de desfoque no que está ATRÁS do card */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Para Safari */
+    
+    /* 3. Uma borda fina e clara para dar profundidade */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    
+    /* 4. Arredondamento e sombra suave */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     padding: 25px;
     position: relative;
@@ -52,8 +63,8 @@
     
 }
 .img{
-    width: 60%;
-    margin: -40px 0px 0px 190px;
+    width: 80%;
+    margin: -55px 0px 0px 145px;
 }
 
 /* Título */
