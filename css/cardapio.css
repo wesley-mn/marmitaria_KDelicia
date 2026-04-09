@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Saira+Stencil:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
+
+:root {
     --fonte01: 'Oswald', sans-serif;
 }
 
 /*sobre fundo */
-.vetor_fundo{
+.vetor_fundo {
     width: 100%;
     position: absolute;
     opacity: 65%;
     box-shadow: 0 4px 20px rgba(80, 10, 20, 0.6);
 }
+
 /*class usada para estilizar a palavra "marmitaria" */
 .titulo {
     color: #F5F5F5;
@@ -21,208 +23,52 @@
     font-weight: normal;
     position: absolute;
 }
-/*class usada para a descrição do tradicional*/
-.desc{
-    font-size: larger;
-    color: white;
-    margin-left: 250px;
-    margin-top: 40px;
-    position: absolute;
+
+/* Área do cardápio */
+.cardapio {
+    max-width: 1200px;
+    margin: 170px 0px 0px 75px;
 }
 
-/*class usada para colocar título no tradicional*/
-.tit1{
+/* Grid dos cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Card individual */
+.card {
+    background: #f4e6d3;
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    min-height: 135px;
+}
+
+/* imagem */
+.div_img{
+    position: absolute;
+    
+}
+.img{
+    width: 60%;
+    margin: -40px 0px 0px 190px;
+}
+
+/* Título */
+.card h3 {
+    color: #7a1c1c;
     font-size: x-large;
-    color: white;
-    margin-left: 30px;
-    margin-top: -40px;
-    position: absolute;
-
+    margin: 2px 0px 0px 0px;
 }
 
-/*class usada para a descrição da marmita  fitness*/
-.desc2{
-    font-size: larger;
-    color: white;
-    margin-left: -150px;
-    margin-top: 95px;
-    position: absolute;
-}
+/* Descrição */
+.card p {
+    font-size: large;
+    color: #5c4c39;
+    margin-bottom: 15px;
+    margin: 4px 0;
+    line-height: 1.2;
 
-/*class usada para colocar o título fitness*/
-.tit2{
-    font-size: x-large;
-    color: white;
-    margin-left: 0px;
-    margin-top: -100px;
-    position: absolute;
-}
-
-/*class usada para a descrição tradicional*/
-.desc3{
-    font-size: x-large;
-    color: white;
-    margin-left: 280px;
-    margin-top: 20px;  
-}
-
-/*class usada para colocar o título tradicional*/
-.tit3{
-    font-size: x-large;
-    color: white;
-    margin-left: -55px;
-    margin-top: -244px;
-}
-
-/*class usada para a descrição gourmet*/
-.desc4{
-    font-size: x-large;
-    color: white;
-    margin-left: 280px;
-    margin-top: 15px;  
-}
-
-/*class usada para colocar  o título gourmet*/
-.tit4{
-    font-size: x-large;
-    color: white;
-    margin-left: -55px;
-    margin-top: -244px;
-}
-
-/*class usada para a descrição especial*/
-.desc5{
-    font-size: x-large;
-    color: white;
-    margin-left: 295px;
-    margin-top: 35px;  
-}
-
-/*class usada para colocar o título especial*/
-.tit5{
-    font-size: x-large;
-    color: white;
-    margin-left: -60px;
-    margin-top: -244px;
-}
-
-/*class usada para a descrição de bebidas*/
-.desc6{
-    font-size: x-large;
-    color: white;
-    margin-left: 263px;
-    margin-top: -200px;  
-}
-
-/*class usada para colocar o título bebidas*/
-.tit6{
-    font-size: x-large;
-    color: white;
-    margin-left: -35px;
-    margin-top: 20px;
-}
-/*class usada para mexer na imagem da marmita tradicional */
-.tradicional{
-    width: 110%;
-    height: auto;
-    margin: 0px 0px 0px -77px;
-    position: absolute;
-}
-/*class usada para mexer na imagem da marmita fitness*/
-.carne{
-    width: 110%;
-    height: auto;
-    opacity: 100%;
-    margin: 0px 0px 0px -77px;
-}
-
-/*class usada para mexer na imagem das bebidas */
-.bebidas{
-    width: 40%;
-    height: auto;
-    opacity: 100%;
-    margin-left: 25px;
-    margin-top: 43px;
-}
-
-/*class usada para mexer na imagem da  marmita gourmet*/
-.gourmet{
-    width: 40%;
-    height: auto;
-    opacity: 100%;
-    margin-left: 25px;  
-}
-/*class usada para mexer na imagem da marmita especial*/
-.special{
-    width: 40%;
-    height: auto;
-    opacity: 100%;
-    margin-left: 25px;
-}
-/*class usada para colocar cardápio salada */
-.aside{
-    background-color: #5a1414;
-    width: 300px;
-    height: 210px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 50px;
-    position: absolute;
-    top: 240px;
-}
-/*class usada para colocar cardápio fitness*/
-.aside2{
-    background-color: #5a1414;
-    width: 300px;
-    height: 210px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 550px;
-    position: absolute;
-    top: 240px;
-}
-/*class usada para colocar cardápio tradicional*/
-.aside3{
-    background-color: #5a1414;
-    width: 310px;
-    height: 230px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 901px;
-    position: absolute;
-    top: 240px;
-}
-
-/*class usada para colocar cardápio gourmet */
-.aside4{
-    background-color: #5a1414;
-    width: 310px;
-    height: 230px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 50px;
-    position: absolute;
-    top: 540px;
-}
-/*class usada para colocar  cardápio especial*/
-.aside5{
-    background-color: #5a1414;
-    width: 310px;
-    height: 230px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 550px;
-    position: absolute;
-    top: 540px;
-}
-/*class usada para colocar as bebidas*/
-.aside6{
-    background-color: #5a1414;
-    width: 310px;
-    height: 230px;
-    color: white;
-    border-radius: 25px;
-    margin-left: 901px;
-    position: absolute;
-    top: 540px;
 }
