@@ -40,15 +40,9 @@
 /* Card individual */
 .card {
     background: rgba(255, 255, 255, 0.2); 
-    
-    /* 2. O efeito de desfoque no que está ATRÁS do card */
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* Para Safari */
-    
-    /* 3. Uma borda fina e clara para dar profundidade */
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    
-    /* 4. Arredondamento e sombra suave */
     border-radius: 15px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
@@ -70,6 +64,7 @@
 /* Título */
 .card h3 {
     color: #7a1c1c;
+    font-family: sans-serif;
     font-size: x-large;
     margin: 2px 0px 0px 0px;
 }
