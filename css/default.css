@@ -140,6 +140,16 @@ header {
     margin: 25px 0px 0px 645px;
     position: absolute;;
 }
+/*id usado para mexer na legenda do rodape*/
+#foo13{
+    margin: -185px 0px 0px 1030px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+.foo14{
+    margin: -135px 0px 0px 1030px;
+    position: absolute;
+}
 /*legenda dos horarios*/
 footer p{
     font-family: "Berlin Sans FB";
