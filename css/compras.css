@@ -1,0 +1,323 @@
+.titulo-compras {
+    font-family: 'Cinzel', serif;
+    color: #6b2737;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-align: center;
+    margin: 30px 0 24px;
+}
+
+.compras-grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 18px;
+    padding: 0 30px 40px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.card-prod {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    border: 1px solid rgba(107, 39, 55, 0.15);
+}
+
+.card-prod h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b2737;
+    margin: 6px 0 2px;
+}
+
+.card-prod p {
+    font-size: 11px;
+    color: #7a5a45;
+    margin-bottom: 8px;
+}
+
+.card-prod strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 900;
+    color: #6b2737;
+    margin-bottom: 10px;
+}
+
+.btn-add {
+    background: #6b2737;
+    color: #f5e6d0;
+    border: none;
+    border-radius: 7px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-add:hover {
+    background: #8a3347;
+}
+
+.carrinho-box {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 18px;
+    border: 1px solid rgba(107, 39, 55, 0.15);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.carr-titulo {
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #6b2737;
+    letter-spacing: 0.1em;
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(107, 39, 55, 0.15);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge {
+    background: #6b2737;
+    color: #f5e6d0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 900;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carr-vazio {
+    color: #a08060;
+    font-size: 13px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.carr-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid rgba(107, 39, 55, 0.08);
+    font-size: 12px;
+    gap: 8px;
+}
+
+.ci-nome {
+    color: #4a2a1a;
+    font-weight: 700;
+    flex: 1;
+}
+
+.ci-carne {
+    display: block;
+    font-size: 11px;
+    color: #7a5a45;
+    font-style: italic;
+}
+
+.ci-qtd {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.ci-qtd button {
+    background: rgba(107, 39, 55, 0.12);
+    border: none;
+    border-radius: 4px;
+    width: 22px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 900;
+    color: #6b2737;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.ci-qtd span {
+    font-size: 13px;
+    font-weight: 700;
+    color: #6b2737;
+    min-width: 16px;
+    text-align: center;
+}
+
+.ci-preco {
+    color: #6b2737;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.carr-total {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 2px solid rgba(107, 39, 55, 0.2);
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 900;
+    color: #6b2737;
+}
+
+.form-pedido {
+    margin-top: 16px;
+}
+
+.form-pedido label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a5a45;
+    margin-bottom: 3px;
+    letter-spacing: 0.07em;
+}
+
+.form-pedido input,
+.form-pedido select {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid rgba(107, 39, 55, 0.25);
+    background: #fff;
+    font-size: 12px;
+    color: #4a2a1a;
+    margin-bottom: 10px;
+    outline: none;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-finalizar {
+    background: #6b2737;
+    color: #f5e6d0;
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    font-size: 13px;
+    font-weight: 900;
+    cursor: pointer;
+    width: 100%;
+    letter-spacing: 0.08em;
+    margin-top: 4px;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-finalizar:hover {
+    background: #8a3347;
+}
+
+.sucesso-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 32px;
+    text-align: center;
+    border: 2px solid #6b2737;
+    grid-column: 2;
+    height: fit-content;
+}
+
+.sucesso-box h3 {
+    color: #6b2737;
+    font-family: 'Cinzel', serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.sucesso-box p {
+    color: #7a5a45;
+    font-size: 13px;
+    margin-bottom: 18px;
+}
+
+.btn-novo {
+    background: #6b2737;
+    color: #f5e6d0;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 22px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.btn-novo:hover {
+    background: #8a3347;
+}
+
+.label-carne {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #7a5a45;
+    margin: 6px 0 3px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.select-carne {
+    width: 100%;
+    padding: 5px 8px;
+    border-radius: 7px;
+    border: 1px solid rgba(107, 39, 55, 0.25);
+    background: #fff;
+    font-size: 12px;
+    color: #4a2a1a;
+    margin-bottom: 6px;
+    font-family: 'Lato', sans-serif;
+}
+
+.cat-label {
+    display: inline-block;
+    background: rgba(107, 39, 55, 0.1);
+    color: #6b2737;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 2px 8px;
+    margin-bottom: 4px;
+}
+
+.fechado-aviso {
+    grid-column: 1 / -1;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    border: 1px solid rgba(107, 39, 55, 0.15);
+}
+
+.fechado-aviso p:first-child {
+    color: #6b2737;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: 'Cinzel', serif;
+}
+
+.fechado-aviso p:last-child {
+    color: #7a5a45;
+    font-size: 13px;
+}

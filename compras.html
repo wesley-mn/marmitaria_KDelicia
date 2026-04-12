@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmitaria K'Delícia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/compras.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <header class="header">
+            <img class="logo" src="/img/logo.png" alt="logo">
+            <nav class="menu">
+                <ul>
+                    <a href="index.html"><li>INÍCIO</li></a>
+                    <a href="cardápio.html"><li>CARDÁPIO</li></a>
+                    <a href="sobre_nós.html"><li>SOBRE NÓS</li></a>
+                    <a href="compras.html"><li>COMPRAS</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section">
+            <h1 class="titulo-compras">FAÇA SEU PEDIDO</h1>
+
+            <div class="compras-grid">
+
+                <div class="produtos-grid" id="produtos"></div>
+
+                <aside class="carrinho-box" id="carr-box">
+                    <h3 class="carr-titulo">CARRINHO <span class="badge" id="badge">0</span></h3>
+
+                    <div id="carr-itens">
+                        <p class="carr-vazio">Nenhum item adicionado</p>
+                    </div>
+
+                    <div class="carr-total" id="carr-total" style="display:none;">
+                        <span>Total</span>
+                        <span id="total-val">R$ 0,00</span>
+                    </div>
+
+                    <div class="form-pedido" id="form-pedido" style="display:none;">
+                        <label>NOME</label>
+                        <input type="text" id="inp-nome" placeholder="Seu nome completo">
+
+                        <label>TELEFONE</label>
+                        <input type="text" id="inp-tel" placeholder="(41) 99999-9999">
+
+                        <label>ENTREGA</label>
+                        <select id="inp-entrega">
+                            <option value="retirada">Retirada no local</option>
+                            <option value="delivery">Delivery</option>
+                        </select>
+
+                        <div id="end-box" style="display:none;">
+                            <label>ENDEREÇO</label>
+                            <input type="text" id="inp-end" placeholder="Rua, número, bairro">
+                        </div>
+
+                        <label>PAGAMENTO</label>
+                        <select id="inp-pag">
+                            <option value="Pix">Pix</option>
+                            <option value="Cartão">Cartão</option>
+                            <option value="Dinheiro">Dinheiro</option>
+                        </select>
+
+                        <button class="btn-finalizar" onclick="finalizar()">
+                            FINALIZAR VIA WHATSAPP
+                        </button>
+                    </div>
+                </aside>
+
+                <div class="sucesso-box" id="sucesso" style="display:none;">
+                    <h3>Pedido enviado!</h3>
+                    <p>Você será redirecionado ao WhatsApp para confirmar com a equipe.</p>
+                    <button class="btn-novo" onclick="novoPedido()">Fazer novo pedido</button>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="footer">
+            <a><h2 id="foo1">Horário</h2></a>
+            <a>
+                <p id="foo2">Segunda: 11:00 às 14:30</p>
+                <p id="foo3">Terça: 11:00 às 14:30</p>
+                <p id="foo4">Quarta: 11:00 às 14:30</p>
+                <p id="foo5">Quinta: 11:00 às 14:30</p>
+                <p id="foo6">Sexta: 11:00 às 14:30</p>
+                <p id="foo7">Sábado: 11:00 às 14:30</p>
+            </a>
+            <a><h2 id="foo8">Redes Sociais</h2></a>
+            <a href="https://www.instagram.com/marmi_.kdelicia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                <img class="insta" src="/img/instagram.jpeg" alt="insta">
+            </a>
+            <a href="https://wa.me/554197340920">
+                <img class="whatsapp" src="/img/whatsapp.jpeg" alt="wpp">
+            </a>
+            <a href="sobre_nós.html"><h2 id="foo12">Formas de Pagamento</h2></a>
+            <img class="visa" src="/img/visa.png" alt="visa">
+            <img class="pix" src="/img/pix.png" alt="pix">
+            <img class="mastercard" src="/img/mastercard.png" alt="mastercard">
+        </footer>
+
+    </main>
+
+    <script src="/js/compras.js"></script>
+</body>
+</html>
