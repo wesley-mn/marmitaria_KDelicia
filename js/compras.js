@@ -13,13 +13,16 @@ const diasNome = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Q
 const produtos = [
     { id: 1, nome: 'Marmita Grande',     cat: 'Marmita',   desc: 'Escolha a carne do dia',  preco: 20.00  },
     { id: 2, nome: 'Marmita Pequena',    cat: 'Marmita',   desc: 'Escolha a carne do dia',  preco: 15.00  },
-    { id: 3, nome: 'Marmita Fitness',    cat: 'Marmita',   desc: 'Pacote com 10 unidades',  preco: 169.90 },
-    { id: 4, nome: 'Adicional 1 carne',  cat: 'Adicional', desc: 'Uma carne extra',          preco: 10.00  },
-    { id: 5, nome: 'Adicional 2 carnes', cat: 'Adicional', desc: 'Duas carnes extras',       preco: 20.00  },
-    { id: 6, nome: 'Adicional 3 carnes', cat: 'Adicional', desc: 'Três carnes extras',       preco: 30.00  },
-    { id: 7, nome: 'Coca-Cola',          cat: 'Bebida',    desc: 'Lata 350ml',               preco: 18.00  },
-    { id: 8, nome: 'Fanta',              cat: 'Bebida',    desc: 'Lata 350ml',               preco: 17.00  },
-    { id: 9, nome: 'Guaraná Kuat',       cat: 'Bebida',    desc: 'Lata 350ml',               preco: 16.00  },
+    { id: 3, nome: 'Adicional 1 carne',  cat: 'Adicional', desc: 'Uma carne extra',          preco: 10.00  },
+    { id: 4, nome: 'Adicional 2 carnes', cat: 'Adicional', desc: 'Duas carnes extras',       preco: 20.00  },
+    { id: 5, nome: 'Adicional 3 carnes', cat: 'Adicional', desc: 'Três carnes extras',       preco: 30.00  },
+    { id: 6, nome: 'Coca-Cola',          cat: 'Bebida',    desc: 'Lata 350ml',               preco: 8.00  },
+    { id: 7, nome: 'Fanta',              cat: 'Bebida',    desc: 'Lata 350ml',               preco: 7.00  },
+    { id: 8, nome: 'Guaraná',       cat: 'Bebida',    desc: 'Lata 350ml',               preco: 6.00  },
+    { id: 9, nome: 'Coca-Cola',          cat: 'Bebida',    desc: 'Lata 2l',               preco: 18.00  },
+    { id: 10, nome: 'Fanta',              cat: 'Bebida',    desc: 'Lata 2l',               preco: 17.00  },
+    { id: 11, nome: 'Guaraná Kuat',       cat: 'Bebida',    desc: 'Lata 2l',               preco: 16.00  },
+    { id: 12, nome: 'Água Mineral',       cat: 'Bebida',    desc: '350ml',               preco: 5.00  },
 ];
 
 let carrinho = {};
