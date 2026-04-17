@@ -7,7 +7,14 @@
     text-align: center;
     margin: 30px 0 24px;
 }
-
+.section {
+    background-color: burlywood;
+    width: 102%;
+    height: auto;
+    margin: 100px 0px 0px -8px;
+    position: absolute;
+    top: -12px;
+}
 .compras-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -320,4 +327,116 @@
 .fechado-aviso p:last-child {
     color: #7a5a45;
     font-size: 13px;
+}
+#footer{
+    background-color: #5a1414;
+    width: 102%;
+    margin-top: 966px;
+    margin-left: -8px;
+    border-bottom: 1px solid rgb(225, 222, 222);
+}
+/*id usado para nas legendas do rodape*/
+#footer a {
+    text-decoration: none;
+    color: inherit;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo1{
+    margin: 25px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo2{
+    margin: 55px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo3{
+    margin: 75px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo4{
+    margin: 95px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo5{
+    margin: 115px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo6{
+    margin: 135px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo7{
+    margin: 155px 0px 0px 55px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo8{
+    margin: 25px 0px 0px 350px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+.insta{
+    width: 57px;
+    height: auto;
+    margin-top: 70px;
+    margin-left: 355px;
+    border-radius: 15px;
+    position: absolute;
+}
+/*usado para mexer na imagem whatsapp*/
+.whatsapp{
+    width: 60px;
+    height: auto;
+    margin-top: 67px;
+    margin-left: 426px;
+    position: absolute;
+    border-radius: 35px;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo11{
+    margin: 150px 0px 0px 650px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo12{
+    margin: 25px 0px 0px 645px;
+    position: absolute;;
+}
+/*id usado para mexer na legenda do rodape*/
+#foo13{
+    margin: -185px 0px 0px 1030px;
+    position: absolute;
+}
+/*id usado para mexer na legenda do rodape*/
+.foo14{
+    margin: -135px 0px 0px 1030px;
+    position: absolute;
+}
+/*legenda dos horarios*/
+footer p{
+    font-family: "Berlin Sans FB";
+}
+/*classe usada para mexer nas formas de pagamento*/
+.visa{
+    width: 15%;
+    position: absolute;
+    margin: 35px 0px 0px 605px;
+}
+/*classe usada para mexer nas formas de pagamento*/
+.pix{
+    width: 15%;
+    position: relative;
+    margin: 33px 0px 0px 720px;
+}
+/*classe usada para mexer nas formas de pagamento*/
+.mastercard{
+    width: 10%;
+    position: relative;
+    margin: -60px 0px 0px 700px;
 }
