@@ -1,3 +1,13 @@
+.titulo {
+    color: #F5F5F5;
+    font-family: var(--fonte01);
+    font-size: 66px;
+    letter-spacing: 2px;
+    top: -31px;
+    margin-left: 460px;
+    font-weight: normal;
+    position: absolute;
+}
 .par{
     width: 445px;
     height: auto;
