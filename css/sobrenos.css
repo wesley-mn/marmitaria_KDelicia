@@ -1,25 +1,237 @@
 .titulo {
     color: #F5F5F5;
-    font-family: var(--fonte01);
-    font-size: 66px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 65px;
     letter-spacing: 2px;
-    top: -31px;
-    margin-left: 460px;
+    top: -30px;
+    margin-left: 520px;
     font-weight: normal;
     position: absolute;
 }
-.par{
-    width: 445px;
+
+.par {
+    width: 530px;
     height: auto;
     font-size: larger;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 90px 0px 0px 90px;
+    font-family: sans-serif;
+    margin: 115px 0px 0px 100px;
     position: absolute;
     text-align: justify;
 }
-.restaurante{
-    width: 510px;
-    height: auto;
-    margin: 93px 0px 0px 695px;
+
+.container-fotos {
+    width: 55%;
+    height: 400px;
+    margin: 60px 0px 0px 590px;
+    position: relative;
+}
+
+.restaurante1,
+.restaurante2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-radius: 10px;
+    animation: fadeMarmitaria 7s infinite;
+}
+
+.restaurante2 {
+    animation-delay: 3.5s;
+}
+
+@keyframes fadeMarmitaria {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    /* Aparece */
+    45% {
+        opacity: 1;
+    }
+
+    /* Fica visível */
+    55% {
+        opacity: 0;
+    }
+
+    /* Começa a sumir */
+    100% {
+        opacity: 0;
+    }
+}
+.mvv-label {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: #c8863c;
+    margin-bottom: 10px;
+}
+
+.mvv-titulo-secao {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #f5e6c8;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.mvv-linha-deco {
+    width: 50px;
+    height: 2px;
+    background: #c8863c;
+    margin: 0 auto 48px;
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+    .mvv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mvv-wrapper {
+        padding: 40px 20px;
+    }
+}
+
+.mvv-wrapper {
+    padding: 36px 32px 40px;
+}
+
+.mvv-titulo {
+    text-align: center;
+    color: #F5F5F5;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin: -60px 0px 20px 0px;
+}
+
+.mvv-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mvv-table thead tr th {
+    background: #5a1a1a;
+    color: #d4b896;
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    padding: 13px 16px;
+    text-align: center;
+    border: 2px solid #7a2a2a;
+}
+
+.mvv-table tbody td {
+    padding: 22px 20px;
+    text-align: center;
+    vertical-align: top;
+    border: 2px solid #b8936a;
+}
+
+.cat-label {
+    display: inline-block;
+    background: #5a1a1a;
+    color: #d4b896;
+    font-family: 'Lato', sans-serif;
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 2px;
+    margin-bottom: 12px;
+}
+
+.cat-texto {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #3a1000;
+    line-height: 1.8;
+    margin-top: 4px;
+}
+
+.valores-lista {
+    list-style: none;
+    padding: 0;
+    margin: 6px 0 0;
+}
+
+.valores-lista li {
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #3a1000;
+    padding: 4px 0;
+    line-height: 1.6;
+}
+
+/* Responsivo: empilha colunas em telas pequenas */
+@media (max-width: 600px) {
+
+    .mvv-table,
+    .mvv-table thead,
+    .mvv-table tbody,
+    .mvv-table th,
+    .mvv-table td,
+    .mvv-table tr {
+        display: block;
+        width: 100%;
+    }
+
+    .mvv-table thead tr {
+        display: none;
+    }
+
+    .mvv-table tbody td {
+        border-bottom: 2px solid #b8936a;
+        margin-bottom: 4px;
+    }
+
+    .mvv-table tbody td::before {
+        content: attr(data-label);
+        display: block;
+        font-family: 'Lato', sans-serif;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #5a1a1a;
+        margin-bottom: 8px;
+    }
+
+    .mvv-wrapper {
+        padding: 24px 16px 28px;
+    }
+}
+.section{
+    height: 800px;
+}
+#footer{
+    margin-top:888px;
 }
