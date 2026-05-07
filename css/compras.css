@@ -7,14 +7,16 @@
     text-align: center;
     margin: 30px 0 24px;
 }
+
 .section {
     background-color: burlywood;
-    width: 102%;
+    width: 100%;
     height: auto;
-    margin: 100px 0px 0px -8px;
-    position: absolute;
-    top: -12px;
+    margin: 88px 0 0 0;
+    position: relative;
+    box-sizing: border-box;
 }
+
 .compras-grid {
     display: grid;
     grid-template-columns: 1fr 320px;
@@ -71,9 +73,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.btn-add:hover {
-    background: #8a3347;
-}
+.btn-add:hover { background: #8a3347; }
 
 .carrinho-box {
     background: rgba(255, 255, 255, 0.85);
@@ -82,7 +82,7 @@
     border: 1px solid rgba(107, 39, 55, 0.15);
     height: fit-content;
     position: sticky;
-    top: 20px;
+    top: 100px;
 }
 
 .carr-titulo {
@@ -186,9 +186,7 @@
     color: #6b2737;
 }
 
-.form-pedido {
-    margin-top: 16px;
-}
+.form-pedido { margin-top: 16px; }
 
 .form-pedido label {
     display: block;
@@ -211,6 +209,7 @@
     margin-bottom: 10px;
     outline: none;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 .btn-finalizar {
@@ -228,9 +227,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.btn-finalizar:hover {
-    background: #8a3347;
-}
+.btn-finalizar:hover { background: #8a3347; }
 
 .sucesso-box {
     background: rgba(255, 255, 255, 0.9);
@@ -268,9 +265,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-.btn-novo:hover {
-    background: #8a3347;
-}
+.btn-novo:hover { background: #8a3347; }
 
 .label-carne {
     display: block;
@@ -292,6 +287,7 @@
     color: #4a2a1a;
     margin-bottom: 6px;
     font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
 }
 
 .cat-label {
@@ -328,115 +324,12 @@
     color: #7a5a45;
     font-size: 13px;
 }
-#footer{
+
+/* Footer — herdado do default.css, sem margens fixas duplicadas */
+#footer {
     background-color: #5a1414;
-    width: 102%;
-    margin-top: 966px;
-    margin-left: -8px;
-    border-bottom: 1px solid rgb(225, 222, 222);
-}
-/*id usado para nas legendas do rodape*/
-#footer a {
-    text-decoration: none;
-    color: inherit;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo1{
-    margin: 25px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo2{
-    margin: 55px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo3{
-    margin: 75px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo4{
-    margin: 95px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo5{
-    margin: 115px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo6{
-    margin: 135px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo7{
-    margin: 155px 0px 0px 55px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo8{
-    margin: 25px 0px 0px 350px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-.insta{
-    width: 57px;
-    height: auto;
-    margin-top: 70px;
-    margin-left: 355px;
-    border-radius: 15px;
-    position: absolute;
-}
-/*usado para mexer na imagem whatsapp*/
-.whatsapp{
-    width: 60px;
-    height: auto;
-    margin-top: 67px;
-    margin-left: 426px;
-    position: absolute;
-    border-radius: 35px;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo11{
-    margin: 150px 0px 0px 650px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo12{
-    margin: 25px 0px 0px 645px;
-    position: absolute;;
-}
-/*id usado para mexer na legenda do rodape*/
-#foo13{
-    margin: -185px 0px 0px 1030px;
-    position: absolute;
-}
-/*id usado para mexer na legenda do rodape*/
-.foo14{
-    margin: -135px 0px 0px 1030px;
-    position: absolute;
-}
-/*legenda dos horarios*/
-footer p{
-    font-family: "Berlin Sans FB";
-}
-/*classe usada para mexer nas formas de pagamento*/
-.visa{
-    width: 15%;
-    position: absolute;
-    margin: 35px 0px 0px 605px;
-}
-/*classe usada para mexer nas formas de pagamento*/
-.pix{
-    width: 15%;
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
-    margin: 33px 0px 0px 720px;
-}
-/*classe usada para mexer nas formas de pagamento*/
-.mastercard{
-    width: 10%;
-    position: relative;
-    margin: -60px 0px 0px 700px;
+    margin: 0;
 }

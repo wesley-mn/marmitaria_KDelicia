@@ -2,9 +2,10 @@
 .container {
     width: 98%;
     height: auto;
-    margin: 0%auto;
-    position: absolute;
+    margin: 0% auto;
+    position: relative;
     color: #ffffff;
+    overflow-x: hidden;
 }
 
 /*usamos a classe logo para mexer */
@@ -33,10 +34,10 @@ header {
 .menu {
     font-family: "Bauhaus 93";
     font-size: xx-large;
-
 }
+
 /*class usada para mexer no tamanho e espaçamento do menu*/
-.menu,ul,li {
+.menu, ul, li {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -45,75 +46,76 @@ header {
     justify-content: center;
     margin: -80px 34px;
 }
-/*lass para mexer na altura e cor no menu*/
+
+/*class para mexer na altura e cor no menu*/
 .menu ul li {
     height: 30px;
     color: #ffffff;
 }
+
 /*class usada para determinar tamanho do espaço na imagem*/
 .section {
     background-color: burlywood;
-    width: 102%;
-    height: 1367px;
-    margin: 100px 0px 0px -8px;
-    position: absolute;
-    top: -12px;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    margin: 88px 0px 0px 0px;
+    position: relative;
+    box-sizing: border-box;
 }
+
 /*id usado para mexer no rodape da pagina*/
-#footer{
+#footer {
     background-color: #5a1414;
-    width: 102%;
-    margin-top: 1455px;
-    margin-left: -8px;
-    border-bottom: 1px solid rgb(225, 222, 222);
+    width: 100%;
+    padding: 24px 30px 30px 30px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    min-height: 220px;
 }
+
 /*id usado para nas legendas do rodape*/
 #footer a {
     text-decoration: none;
     color: inherit;
 }
+
 /*id usado para mexer na legenda do rodape*/
-#foo1{
+#foo1 {
     margin: 25px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo2{
+#foo2 {
     margin: 55px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo3{
+#foo3 {
     margin: 75px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo4{
+#foo4 {
     margin: 95px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo5{
+#foo5 {
     margin: 115px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo6{
+#foo6 {
     margin: 135px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo7{
+#foo7 {
     margin: 155px 0px 0px 55px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo8{
+#foo8 {
     margin: 25px 0px 0px 350px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-.insta{
+.insta {
     width: 57px;
     height: auto;
     margin-top: 70px;
@@ -121,8 +123,7 @@ header {
     border-radius: 15px;
     position: absolute;
 }
-/*usado para mexer na imagem whatsapp*/
-.whatsapp{
+.whatsapp {
     width: 60px;
     height: auto;
     margin-top: 67px;
@@ -130,44 +131,36 @@ header {
     position: absolute;
     border-radius: 35px;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo11{
+#foo11 {
     margin: 150px 0px 0px 650px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo12{
+#foo12 {
     margin: 25px 0px 0px 645px;
-    position: absolute;;
+    position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-#foo13{
+#foo13 {
     margin: -185px 0px 0px 1030px;
     position: absolute;
 }
-/*id usado para mexer na legenda do rodape*/
-.foo14{
+.foo14 {
     margin: -135px 0px 0px 1030px;
     position: absolute;
 }
-/*legenda dos horarios*/
-footer p{
+footer p {
     font-family: "Berlin Sans FB";
 }
-/*classe usada para mexer nas formas de pagamento*/
-.visa{
+.visa {
     width: 15%;
     position: absolute;
     margin: 35px 0px 0px 605px;
 }
-/*classe usada para mexer nas formas de pagamento*/
-.pix{
+.pix {
     width: 15%;
     position: relative;
     margin: 33px 0px 0px 720px;
 }
-/*classe usada para mexer nas formas de pagamento*/
-.mastercard{
+.mastercard {
     width: 10%;
     position: relative;
     margin: -60px 0px 0px 700px;
