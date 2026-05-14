@@ -1,139 +1,32 @@
-/* HOME */
-
-.section {
-    background-color: burlywood;
-    width: 100%;
-    min-height: auto;
-    padding: 30px 40px 60px;
-    box-sizing: border-box;
+.section{padding:46px 20px 72px}
+.hero-home{
+    width:min(1100px,100%);
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1.12fr .88fr;
+    align-items:center;
+    gap:34px;
+    padding:24px;
+    border-radius:30px;
+    background:linear-gradient(135deg,rgba(255,255,255,.20),rgba(255,255,255,.07));
+    border:1px solid rgba(255,255,255,.26);
+    box-shadow:var(--shadow);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
 }
-
-.hero-home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+.background{
+    width:100%;
+    border:1px solid rgba(255,255,255,.34);
+    border-radius:24px;
+    box-shadow:0 18px 40px rgba(63,13,13,.28),inset 0 1px 0 rgba(255,255,255,.2);
+    object-fit:cover;
 }
-
-.background {
-    width: 100%;
-    max-width: 560px;
-    border-radius: 20px;
-    border: 4px solid #C26667;
-    display: block;
-    object-fit: cover;
-}
-
-.container-marmitaria {
-    max-width: 500px;
-    text-align: center;
-    padding: 0;
-}
-
-.titulo {
-    color: #F5F5F5;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(38px, 5vw, 64px);
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin: 0 0 10px;
-    position: static;
-}
-
-.linha-decorativa {
-    width: 220px;
-    height: 6px;
-    background: linear-gradient(to right, #c26667, rgba(163,134,86,0));
-    border-radius: 10px;
-    margin: 0 auto 20px;
-}
-
-.descri_home {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: clamp(18px, 2.2vw, 28px);
-    color: white;
-    line-height: 1.5;
-    margin: 0;
-}
-
-.descri_home p {
-    margin: 0;
-}
-
-.home-galeria {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 50px auto 0;
-}
-
-.home1,
-.home2,
-.home3 {
-    width: 220px;
-    max-width: 28%;
-    border-radius: 16px;
-    position: static;
-    margin: 0;
-    display: block;
-}
-
-.fitness {
-    width: 100%;
-    max-width: 900px;
-    display: block;
-    margin: 60px auto 0;
-    position: static;
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: 28px 20px 40px;
-    }
-
-    .hero-home {
-        gap: 28px;
-    }
-
-    .background {
-        max-width: 100%;
-    }
-
-    .titulo {
-        font-size: 42px;
-    }
-
-    .descri_home {
-        font-size: 20px;
-    }
-
-    .home1,
-    .home2,
-    .home3 {
-        width: 100%;
-        max-width: 280px;
-    }
-}
-
-@media (max-width: 480px) {
-    .section {
-        padding: 24px 14px 34px;
-    }
-
-    .titulo {
-        font-size: 32px;
-    }
-
-    .descri_home {
-        font-size: 16px;
-    }
-
-    .home-galeria {
-        margin-top: 32px;
-    }
-}
+.container-marmitaria{text-align:center;padding:12px}
+.titulo{font-family:'Lato',Arial,sans-serif;font-size:clamp(42px,5vw,78px);font-weight:900;letter-spacing:.09em;color:#fff;margin:0;text-transform:uppercase;text-shadow:0 6px 18px rgba(0,0,0,.24)}
+.linha-decorativa{height:8px;width:min(260px,70%);margin:14px auto 24px;border-radius:999px;background:linear-gradient(90deg,transparent,#f1c875,#c26667,transparent);box-shadow:0 0 24px rgba(241,200,117,.35)}
+.descri_home{font-size:clamp(18px,2.2vw,27px);line-height:1.45;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.16)}.descri_home p{margin:0}
+.home-galeria{width:min(660px,100%);margin:34px auto 0;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:16px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.home1,.home2,.home3{width:112px;height:112px;object-fit:cover;border-radius:50%;border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 26px rgba(63,13,13,.24);transition:.22s ease}.home1:hover,.home2:hover,.home3:hover{transform:translateY(-4px) scale(1.03)}
+.fitness{width:min(740px,100%);margin:44px auto 0;border-radius:22px;border:1px solid rgba(255,255,255,.28);box-shadow:var(--shadow);background:rgba(255,255,255,.12);padding:8px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+@media(max-width:820px){.section{padding:26px 12px 44px}.hero-home{grid-template-columns:1fr;gap:24px;padding:16px}.container-marmitaria{order:2}.background{order:1}.home-galeria{margin-top:24px;gap:12px;border-radius:24px}.home1,.home2,.home3{width:86px;height:86px}.fitness{margin-top:28px}}
+@media(max-width:480px){.titulo{font-size:36px}.descri_home{font-size:17px}.background{border-radius:18px}.home1,.home2,.home3{width:76px;height:76px}.hero-home{border-radius:22px}}
