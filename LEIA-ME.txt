@@ -1,8 +1,0 @@
-Versão v4 corrigida
-
-Alterações:
-- Footer redesenhado em todas as páginas.
-- Footer 100% responsivo para celular, tablet e desktop.
-- Mantidos os caminhos relativos img/... e css/... para funcionar abrindo localmente.
-
-Use junto com sua pasta img original na raiz do projeto.
