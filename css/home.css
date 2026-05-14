@@ -1,80 +1,139 @@
-/*class usada para mexer na imagem principal do home*/
-.background {
-    width: 45%;
-    height: auto;
-    opacity: 100%;
-    margin: 45px 0px 0px 68px;
-    border-radius: 20px;
-    position: absolute;
-    border-bottom-style: inset;
-    border-right-style: inset;
-    border-left-style: outset;
-    border-top-style: outset;
-    border-color: #C26667;
+/* HOME */
+
+.section {
+    background-color: burlywood;
+    width: 100%;
+    min-height: calc(100vh - 96px);
+    padding: 140px 40px 60px;
+    box-sizing: border-box;
 }
 
-.aside {
-    width: 40%;
-    height: auto;
+.hero-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.background {
+    width: 100%;
+    max-width: 560px;
+    border-radius: 20px;
+    border: 4px solid #C26667;
+    display: block;
+    object-fit: cover;
 }
 
 .container-marmitaria {
-    padding: 40px;
-    display: inline-block;
+    max-width: 500px;
+    text-align: center;
+    padding: 0;
 }
 
 .titulo {
     color: #F5F5F5;
-    font-family: "Berlin Sans FB";
-    font-size: 38px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 900;
     letter-spacing: 2px;
-    top: 15px;
-    margin-left: 705px;
-    font-weight: normal;
-    position: absolute;
+    margin: 0 0 10px;
+    position: static;
 }
 
 .linha-decorativa {
+    width: 220px;
     height: 6px;
-    width: 230px;
-    margin: 45px 0px 0px 706px;
-    background: linear-gradient(to right, #c26667, rgba(163, 134, 86, 0));
+    background: linear-gradient(to right, #c26667, rgba(163,134,86,0));
     border-radius: 10px;
+    margin: 0 auto 20px;
 }
 
 .descri_home {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 25px;
-    margin: -57px 0px 0px 745px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: clamp(18px, 2.2vw, 28px);
+    color: white;
+    line-height: 1.5;
+    margin: 0;
 }
 
-.home1 {
-    width: 15%;
-    height: auto;
-    top: 32px;
-    margin-left: 920px;
-    position: relative;
+.descri_home p {
+    margin: 0;
 }
 
-.home2 {
-    width: 15%;
-    height: auto;
-    top: 265px;
-    margin: 0px 0px 0px 15px;
-    position: absolute;
+.home-galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto 0;
 }
 
+.home1,
+.home2,
 .home3 {
-    width: 15%;
-    height: auto;
-    top: 265px;
-    margin: 0px 0px 0px -420px;
-    position: absolute;
+    width: 220px;
+    max-width: 28%;
+    border-radius: 16px;
+    position: static;
+    margin: 0;
+    display: block;
 }
 
 .fitness {
-    width: 65%;
-    height: auto;
-    position: absolute;
-    margin: 370px 0px 0px -900px;
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    margin: 60px auto 0;
+    position: static;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 150px 20px 40px;
+    }
+
+    .hero-home {
+        gap: 28px;
+    }
+
+    .background {
+        max-width: 100%;
+    }
+
+    .titulo {
+        font-size: 42px;
+    }
+
+    .descri_home {
+        font-size: 20px;
+    }
+
+    .home1,
+    .home2,
+    .home3 {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 140px 14px 34px;
+    }
+
+    .titulo {
+        font-size: 32px;
+    }
+
+    .descri_home {
+        font-size: 16px;
+    }
+
+    .home-galeria {
+        margin-top: 32px;
+    }
 }

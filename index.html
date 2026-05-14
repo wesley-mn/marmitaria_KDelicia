@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marmitaria K'Delícia</title>
-    <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/default.css">
-    <link rel="stylesheet" href="/css/responsivo.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 
@@ -18,91 +18,110 @@
         <!-- a  classe header sera utilizada para colocar a logo e os códigos do nav -->
         <header class="header">
             <!--Tag e class usada para mecher na logo-->
-            <img class="logo" src="/img/logo.png" alt="logo">
+            <img class="logo" src="img/logo.png" alt="logo">
 
             <!-- a classe nav será onde faremos o menu -->
             <nav class="menu">
                 <ul>
-                    <a href="index.html">
-                        <li>INÍCIO</li>
-                    </a>
-                    <a href="cardápio.html">
-                        <li>CARDÁPIO</li>
-                    </a>
-                    <a href="sobre_nós.html">
-                        <li>SOBRE NÓS</li>
-                    </a>
-                    <a href="carrinho.html">
-                        <li>CARRINHO</li>
-                    </a>
+                    <li><a href="index.html">INÍCIO</a></li>
+                    <li><a href="cardápio.html">CARDÁPIO</a></li>
+                    <li><a href="sobre_nós.html">SOBRE NÓS</a></li>
+                    <li><a href="carrinho.html">CARRINHO</a></li>
                 </ul>
             </nav>
         </header>
 
         <!--Sintaxe p/ mexer no corpo da página-->
         <section class="section">
-            <!--Tag e class para mexer na foto home-->
-            <img class="background" src="/img/marmita.png" alt="background">
+            <div class="hero-home">
+                <img class="background" src="img/marmita.png" alt="background">
 
-            <!--Titulo "Marmitaria" no home-->
-            <div class="container-marmitaria">
-                <h1 class="titulo">MARMITARIA</h1>
-                <div class="linha-decorativa"></div>
+                <div class="container-marmitaria">
+                    <h1 class="titulo">MARMITARIA</h1>
+                    <div class="linha-decorativa"></div>
+
+                    <div class="descri_home">
+                        <p>Refeições caseiras preparadas com carinho e ingredientes frescos, entregues direto no seu lar ou trabalho.</p>
+                    </div>
+                </div>
             </div>
 
-            <!--imagens secundárias do home-->
-            <div class="descri_home">
-                <p>Refeições caseiras preparadas com carinho <br> e ingredientes frescos, entregues direto no <br> seu lar ou trabalho.</p>
+            <div class="home-galeria">
+                <img class="home1" src="img/home1.png" alt="home1">
+                <img class="home2" src="img/home2.png" alt="home2">
+                <img class="home3" src="img/home3.png" alt="home3">
             </div>
-            <img class="home1" src="/img/home1.png" alt="home1">
-            <img class="home2" src="/img/home2.png" alt="home2">
-            <img class="home3" src="/img/home3.png" alt="home3">
 
-            <!--imagens terciárias do home-->
-            <img class="fitness" src="/img/marmita_fitness.png" alt="fitness">
+            <img class="fitness" src="img/marmita_fitness.png" alt="fitness">
         </section>
 
         <!--id usado para mexer no rodape do site-->
-        <footer id="footer">
-            <a>
-                <h2 id="foo1">Horário</h2>
-            </a>
+        <footer class="site-footer">
+            <div class="footer-container">
+                <section class="footer-section footer-hours">
+                    <h2><span class="footer-icon">🕒</span>Horário</h2>
+                    <div class="footer-divider"></div>
+                    <ul class="hours-list">
+                        <li><strong>Segunda:</strong> 11:00 às 14:30</li>
+                        <li><strong>Terça:</strong> 11:00 às 14:30</li>
+                        <li><strong>Quarta:</strong> 11:00 às 14:30</li>
+                        <li><strong>Quinta:</strong> 11:00 às 14:30</li>
+                        <li><strong>Sexta:</strong> 11:00 às 14:30</li>
+                        <li><strong>Sábado:</strong> 11:00 às 14:30</li>
+                    </ul>
+                </section>
 
-            <a>
-                <p id="foo2">Segunda: 11:00 às 14:30</p>
-                <p id="foo3">Terça: 11:00 às 14:30</p>
-                <p id="foo4">Quarta: 11:00 às 14:30</p>
-                <p id="foo5">Quinta: 11:00 às 14:30</p>
-                <p id="foo6">Sexta: 11:00 às 14:30</p>
-                <p id="foo7">Sábado: 11:00 às 14:30</p>
-            </a>
+                <section class="footer-section">
+                    <h2><span class="footer-icon">👥</span>Redes Sociais</h2>
+                    <div class="footer-divider"></div>
+                    <div class="social-grid">
+                        <a class="social-card" href="https://www.instagram.com/marmi_.kdelicia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener">
+                            <img src="img/instagram.jpeg" alt="Instagram">
+                            <span><strong>Instagram</strong><small>@marmi_.kdelicia</small></span>
+                        </a>
+                        <a class="social-card" href="https://wa.me/554197340920" target="_blank" rel="noopener">
+                            <img src="img/whatsapp.jpeg" alt="WhatsApp">
+                            <span><strong>WhatsApp</strong><small>(41) 97340-920</small></span>
+                        </a>
+                    </div>
+                </section>
 
-            <a>
-                <h2 id="foo8">Redes Sociais</h2>
-            </a>
+                <section class="footer-section">
+                    <h2><span class="footer-icon">💳</span>Formas de Pagamento</h2>
+                    <div class="footer-divider"></div>
+                    <div class="payment-grid">
+                        <div class="payment-card"><img src="img/visa.png" alt="Visa"><span>Visa</span></div>
+                        <div class="payment-card"><img src="img/pix.png" alt="Pix"><span>Pix</span></div>
+                        <div class="payment-card"><img src="img/mastercard.png" alt="Mastercard"><span>Mastercard</span></div>
+                    </div>
+                </section>
 
-            <a
-                href="https://www.instagram.com/marmi_.kdelicia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-                <img class="insta" src="/img/instagram.jpeg" alt="insta">
-            </a>
+                <section class="footer-section">
+                    <h2><span class="footer-icon">📍</span>Localização</h2>
+                    <div class="footer-divider"></div>
+                    <a class="location-card" href="https://share.google/8J13wVVsr6TcF3NnL" target="_blank" rel="noopener">
+                        <span class="pin">📍</span>
+                        <span>
+                            <strong>R. Jorge Faustino da Silva, 33</strong>
+                            <small>Jardim dos Eucaliptos - Piraquara - PR, 83311-070</small>
+                            <em>Ver no Google Maps</em>
+                        </span>
+                    </a>
+                </section>
 
-            <a href="https://wa.me/554197340920" target="_blank">
-                <img class="whatsapp" src="/img/whatsapp.jpeg" alt="wpp">
-            </a>
+                <div class="footer-brand">
+                    <img src="img/logo.png" alt="Marmitaria K'Delícia">
+                    <div>
+                        <span>Marmitaria</span>
+                        <strong>K’Delícia</strong>
+                        <small>Feito com carinho para você! ❤️</small>
+                    </div>
+                </div>
 
-            
-            <h2 id="foo12">Formas de Pagamento</h2>
-            <img class="visa" src="/img/visa.png" alt="visa">
-            <img class="pix" src="/img/pix.png" alt="pix">
-            <img class="mastercard" src="/img/mastercard.png" alt="mastercard">
-
-            <h2 id="foo13">Localização</h2>
-            <a href="https://share.google/8J13wVVsr6TcF3NnL" target="_blank">
-                <p class="foo14">R. Jorge Faustino da Silva, 33 - Jardim dos Eucaliptos - Piraquara - PR, 83311-070</p>
-            </a>
+                <p class="footer-copy">© 2024 Marmitaria K'Delícia. Todos os direitos reservados.</p>
+            </div>
         </footer>
     </main>
 
 </body>
-<script src="/js/default.js"></script>
 </html>
