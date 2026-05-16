@@ -517,3 +517,35 @@ body{
         font-size:15px;
     }
 }
+
+
+/* ===== CORREÇÃO MOBILE FINAL ===== */
+@media (max-width: 768px){
+
+    .banner-cardapio{
+        height:120px !important;
+        margin-top:0 !important;
+        padding-top:0 !important;
+    }
+
+    .container-marmitaria{
+        margin:0 !important;
+        padding:18px 20px !important;
+        height:auto !important;
+
+        display:flex !important;
+        align-items:flex-end !important;
+    }
+
+    .titulo-cardapio{
+        position:relative !important;
+        top:auto !important;
+        bottom:auto !important;
+
+        margin-top:28px !important;
+
+        font-size:3rem !important;
+        line-height:1 !important;
+    }
+
+}
