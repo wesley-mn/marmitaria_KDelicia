@@ -1,29 +1,38 @@
-/* HOME igual ao print: imagem grande esquerda, texto e bolinhas direita */
+/* HOME - imagem esquerda, texto direita, bolinhas abaixo do texto */
 
 .section{
-    padding:44px 5% 70px;
+    min-height:auto;
+    padding:44px 5% 72px;
     background:#d9ad73;
 }
 
+/* Bloco principal */
 .hero-home{
     width:min(1240px,100%);
     margin:0 auto;
     display:grid;
-    grid-template-columns:1.05fr .95fr;
+    grid-template-columns:1.08fr .92fr;
     align-items:center;
-    gap:60px;
+    gap:58px;
 }
 
+/* Imagem principal */
 .background{
     width:100%;
     height:430px;
     object-fit:cover;
     border-radius:22px;
-    border:3px solid rgba(194,102,103,.78);
+    border:3px solid rgba(194,102,103,.82);
     box-shadow:0 18px 38px rgba(63,13,13,.24);
 }
 
+/* Conteúdo direito */
 .container-marmitaria{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
     text-align:left;
     padding:0;
 }
@@ -31,11 +40,11 @@
 .titulo{
     font-family:'Lato',Arial,sans-serif;
     color:#fff;
-    font-size:clamp(42px,4vw,64px);
-    letter-spacing:.06em;
+    font-size:clamp(42px,4.2vw,64px);
+    letter-spacing:.09em;
     font-weight:500;
     margin:0;
-    line-height:1.05;
+    line-height:1.04;
     text-transform:uppercase;
     text-shadow:0 4px 12px rgba(0,0,0,.18);
 }
@@ -51,7 +60,7 @@
 .descri_home{
     max-width:620px;
     color:#fff;
-    font-size:clamp(23px,2.2vw,34px);
+    font-size:clamp(23px,2.15vw,34px);
     line-height:1.42;
     text-shadow:0 3px 10px rgba(0,0,0,.15);
 }
@@ -60,10 +69,10 @@
     margin:0;
 }
 
+/* Bolinhas agora ficam embaixo do texto, sem jogar para baixo */
 .home-galeria{
-    width:min(1240px,100%);
-    margin:36px auto 0;
-    padding-left:calc(52% + 20px);
+    width:100%;
+    margin:44px 0 0;
     display:flex;
     align-items:center;
     justify-content:flex-start;
@@ -89,9 +98,10 @@
     transform:translateY(-6px) scale(1.04);
 }
 
+/* Imagem inferior */
 .fitness{
     width:min(820px,100%);
-    margin:58px auto 0;
+    margin:64px auto 0;
     border-radius:18px;
     border:1px solid rgba(255,255,255,.30);
     box-shadow:0 18px 34px rgba(0,0,0,.18);
@@ -99,21 +109,44 @@
     background:rgba(255,255,255,.10);
 }
 
-/* Tablet */
-@media(max-width:1050px){
+/* Notebook / tablet grande */
+@media(max-width:1150px){
     .hero-home{
-        grid-template-columns:1fr;
-        gap:28px;
-        text-align:center;
+        gap:36px;
     }
 
     .background{
-        height:auto;
+        height:380px;
+    }
+
+    .home1,
+    .home2,
+    .home3{
+        width:120px;
+        height:120px;
+    }
+}
+
+/* Tablet e celular: empilha tudo bonito */
+@media(max-width:900px){
+    .section{
+        padding:30px 16px 50px;
+    }
+
+    .hero-home{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .background{
+        width:100%;
         max-width:760px;
+        height:auto;
         margin:0 auto;
     }
 
     .container-marmitaria{
+        align-items:center;
         text-align:center;
     }
 
@@ -123,20 +156,32 @@
 
     .descri_home{
         max-width:760px;
-        margin:0 auto;
+        font-size:19px;
     }
 
     .home-galeria{
-        padding-left:0;
         justify-content:center;
-        gap:20px;
+        gap:18px;
+        margin-top:28px;
+    }
+
+    .home1,
+    .home2,
+    .home3{
+        width:100px;
+        height:100px;
+        border-width:3px;
+    }
+
+    .fitness{
+        margin-top:34px;
     }
 }
 
-/* Celular */
-@media(max-width:640px){
+/* Celular pequeno */
+@media(max-width:480px){
     .section{
-        padding:28px 14px 46px;
+        padding:24px 12px 42px;
     }
 
     .titulo{
@@ -145,19 +190,18 @@
     }
 
     .descri_home{
-        font-size:17px;
+        font-size:16px;
         line-height:1.55;
+    }
+
+    .home-galeria{
+        gap:12px;
     }
 
     .home1,
     .home2,
     .home3{
-        width:86px;
-        height:86px;
-        border-width:3px;
-    }
-
-    .fitness{
-        margin-top:32px;
+        width:78px;
+        height:78px;
     }
 }
