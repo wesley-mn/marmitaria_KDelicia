@@ -424,3 +424,33 @@ a{
 .site-footer{
     clear:both;
 }
+
+
+/* FIX FINAL: remove espaço abaixo do footer quando a tela/zoom muda */
+html,
+body{
+    min-height:100%;
+    background:#6b1515;
+}
+
+.container{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#d9ad73;
+}
+
+.section{
+    flex:0 0 auto;
+}
+
+.site-footer{
+    margin-top:auto;
+    flex-shrink:0;
+}
+
+@media(max-height:760px){
+    .site-footer{
+        margin-top:0;
+    }
+}
