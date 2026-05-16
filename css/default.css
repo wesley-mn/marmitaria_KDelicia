@@ -425,32 +425,147 @@ a{
     clear:both;
 }
 
+/* =========================================================
+   AJUSTE FINAL DE RESPONSIVIDADE
+   Evita que header/footer e blocos fiquem pequenos demais
+   ========================================================= */
 
-/* FIX FINAL: remove espaço abaixo do footer quando a tela/zoom muda */
 html,
 body{
-    min-height:100%;
     background:#6b1515;
 }
 
 .container{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
+    width:100%;
+    min-height:auto;
+    display:block;
     background:#d9ad73;
 }
 
-.section{
-    flex:0 0 auto;
+/* Header mais consistente */
+.header{
+    min-height:100px;
 }
 
+.menu a{
+    font-size:clamp(18px, 1.45vw, 30px);
+}
+
+/* Footer mais largo e com informações maiores */
 .site-footer{
-    margin-top:auto;
-    flex-shrink:0;
+    margin-top:0;
+    width:100%;
+    min-height:0;
 }
 
-@media(max-height:760px){
-    .site-footer{
-        margin-top:0;
+.footer-container{
+    width:min(1500px, 92vw);
+    padding:46px 0 30px;
+}
+
+.footer-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(4, minmax(220px, 1fr));
+    gap:clamp(18px, 1.7vw, 30px);
+}
+
+.footer-section{
+    padding:clamp(22px, 1.8vw, 30px);
+    min-height:clamp(190px, 14vw, 245px);
+}
+
+.footer-section h2{
+    font-size:clamp(24px, 1.8vw, 34px);
+}
+
+.hours-list li{
+    font-size:clamp(15px, .95vw, 18px);
+}
+
+.social-card strong,
+.location-card strong{
+    font-size:clamp(15px, 1vw, 19px);
+}
+
+.social-card small,
+.location-card small{
+    font-size:clamp(13px, .9vw, 16px);
+}
+
+.payment-card span{
+    font-size:clamp(12px, .85vw, 15px);
+}
+
+.footer-brand strong{
+    font-size:clamp(34px, 3vw, 54px);
+}
+
+.footer-copy{
+    font-size:clamp(14px, .9vw, 16px);
+}
+
+/* Em telas médias, não deixe o footer encolher igual no print */
+@media(max-width:1500px){
+    .footer-container{
+        width:min(1200px, 86vw);
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(4, minmax(180px, 1fr));
+        gap:18px;
+    }
+
+    .footer-section{
+        padding:20px;
+        min-height:175px;
+    }
+
+    .footer-section h2{
+        font-size:24px;
+    }
+
+    .hours-list li{
+        font-size:14px;
+    }
+
+    .social-card img{
+        width:46px;
+        height:46px;
+    }
+}
+
+/* Tablet */
+@media(max-width:1100px){
+    .footer-container{
+        width:92vw;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(2, minmax(260px, 1fr));
+    }
+
+    .footer-section{
+        min-height:auto;
+    }
+}
+
+/* Celular */
+@media(max-width:640px){
+    .header{
+        min-height:auto;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        width:92vw;
+        padding:30px 0 24px;
+    }
+
+    .footer-section{
+        padding:20px;
     }
 }
