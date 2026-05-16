@@ -58,7 +58,7 @@ a{
     grid-template-columns:150px 1fr 150px;
     align-items:center;
 
-    background:#d9ad73;
+    background:#6b1515;
     box-shadow:0 5px 18px rgba(60,10,10,.38);
     border-radius:0;
 }
@@ -425,129 +425,130 @@ a{
     clear:both;
 }
 
+
 /* =========================================================
-   AJUSTE FINAL DE RESPONSIVIDADE
-   Evita que header/footer e blocos fiquem pequenos demais
+   RESPONSIVO FINAL - HEADER, FOOTER E ZOOM BAIXO
    ========================================================= */
 
-
-
-.container{
-    width:100%;
-    min-height:auto;
-    display:block;
-    background:#d9ad73;
+html,
+body{
+    min-height:100%;
+    background:#6b1515 !important;
 }
 
-/* Header mais consistente */
+.container{
+    min-height:100vh !important;
+    display:flex !important;
+    flex-direction:column !important;
+    background:#d9ad73 !important;
+}
+
+/* Header sempre vinho, nunca amarelo */
 .header{
+    background:#6b1515 !important;
     min-height:100px;
+    box-shadow:0 5px 18px rgba(60,10,10,.38);
+}
+
+.logo{
+    width:84px;
+    height:84px;
 }
 
 .menu a{
-    font-size:clamp(18px, 1.45vw, 30px);
+    font-size:clamp(18px, 1.55vw, 34px);
 }
 
-/* Footer mais largo e com informações maiores */
+/* Conteúdo fica natural */
+.section{
+    flex:0 0 auto;
+}
+
+/* Footer vem logo depois do conteúdo e cresce para cobrir o restante da tela */
 .site-footer{
-    margin-top:0;
-    width:100%;
-    min-height:0;
+    margin:0 !important;
+    flex:1 0 auto !important;
+    background:
+        radial-gradient(circle at top left,rgba(241,200,117,.16),transparent 28%),
+        linear-gradient(135deg,#5a1114 0%,#6b1515 50%,#7a1f25 100%) !important;
 }
 
+/* Footer maior e legível quando a tela fica muito larga/zoom baixo */
 .footer-container{
-    width:min(1500px, 92vw);
-    padding:46px 0 30px;
+    width:min(1320px, 92vw);
 }
 
 .footer-grid{
-    width:100%;
-    display:grid;
-    grid-template-columns:repeat(4, minmax(220px, 1fr));
-    gap:clamp(18px, 1.7vw, 30px);
+    grid-template-columns:repeat(4, minmax(210px, 1fr));
+    gap:clamp(18px, 1.6vw, 28px);
 }
 
 .footer-section{
-    padding:clamp(22px, 1.8vw, 30px);
-    min-height:clamp(190px, 14vw, 245px);
+    padding:clamp(22px, 1.6vw, 30px);
 }
 
 .footer-section h2{
-    font-size:clamp(24px, 1.8vw, 34px);
+    font-size:clamp(24px, 1.65vw, 34px);
 }
 
 .hours-list li{
-    font-size:clamp(15px, .95vw, 18px);
+    font-size:clamp(14px, .9vw, 18px);
 }
 
 .social-card strong,
 .location-card strong{
-    font-size:clamp(15px, 1vw, 19px);
+    font-size:clamp(15px, .95vw, 19px);
 }
 
 .social-card small,
 .location-card small{
-    font-size:clamp(13px, .9vw, 16px);
-}
-
-.payment-card span{
-    font-size:clamp(12px, .85vw, 15px);
+    font-size:clamp(13px, .8vw, 16px);
 }
 
 .footer-brand strong{
     font-size:clamp(34px, 3vw, 54px);
 }
 
-.footer-copy{
-    font-size:clamp(14px, .9vw, 16px);
-}
+/* Quando o navegador estiver muito largo por zoom baixo, aumenta tudo proporcionalmente */
+@media(min-width:1600px){
+    .header{
+        min-height:clamp(110px, 5.8vw, 145px);
+        padding-left:5.5%;
+        padding-right:5.5%;
+    }
 
-/* Em telas médias, não deixe o footer encolher igual no print */
-@media(max-width:1500px){
+    .logo{
+        width:clamp(90px, 4.6vw, 120px);
+        height:clamp(90px, 4.6vw, 120px);
+    }
+
+    .menu a{
+        font-size:clamp(24px, 1.55vw, 38px);
+    }
+
+    .menu ul{
+        gap:clamp(56px, 5.4vw, 120px);
+    }
+
     .footer-container{
-        width:min(1200px, 86vw);
+        width:min(1500px, 82vw);
+        padding-top:54px;
+        padding-bottom:36px;
     }
 
     .footer-grid{
-        grid-template-columns:repeat(4, minmax(180px, 1fr));
-        gap:18px;
-    }
-
-    .footer-section{
-        padding:20px;
-        min-height:175px;
-    }
-
-    .footer-section h2{
-        font-size:24px;
-    }
-
-    .hours-list li{
-        font-size:14px;
-    }
-
-    .social-card img{
-        width:46px;
-        height:46px;
+        grid-template-columns:repeat(4, minmax(240px, 1fr));
     }
 }
 
 /* Tablet */
 @media(max-width:1100px){
-    .footer-container{
-        width:92vw;
-    }
-
     .footer-grid{
         grid-template-columns:repeat(2, minmax(260px, 1fr));
     }
-
-    .footer-section{
-        min-height:auto;
-    }
 }
 
-/* Celular */
+/* Mobile */
 @media(max-width:640px){
     .header{
         min-height:auto;
@@ -560,89 +561,5 @@ a{
     .footer-container{
         width:92vw;
         padding:30px 0 24px;
-    }
-
-    .footer-section{
-        padding:20px;
-    }
-}
-
-
-/* =========================================================
-   FIX FINAL: remove a área vermelha abaixo do footer
-   quando o navegador está com zoom muito baixo
-   ========================================================= */
-
-html,
-body{
-    background:#d9ad73 !important;
-    min-height:100%;
-}
-
-.container{
-    background:#d9ad73 !important;
-    min-height:auto !important;
-    display:block !important;
-}
-
-.site-footer{
-    margin:0 !important;
-    padding-bottom:0;
-}
-
-/* Em zoom baixo/telas muito largas, aumenta o rodapé para não parecer miniatura */
-@media(min-width:1600px){
-    .footer-container{
-        width:min(1500px, 78vw);
-        padding-top:52px;
-        padding-bottom:30px;
-    }
-
-    .footer-grid{
-        grid-template-columns:repeat(4, minmax(230px, 1fr));
-        gap:26px;
-    }
-
-    .footer-section{
-        padding:26px;
-    }
-
-    .footer-section h2{
-        font-size:30px;
-    }
-
-    .hours-list li{
-        font-size:16px;
-    }
-
-    .social-card strong,
-    .location-card strong{
-        font-size:17px;
-    }
-
-    .social-card small,
-    .location-card small{
-        font-size:15px;
-    }
-
-    .footer-brand strong{
-        font-size:48px;
-    }
-}
-
-/* Se a tela ficar baixa por causa do zoom, reduz espaços verticais sem criar sobra */
-@media(max-height:760px){
-    .section{
-        padding-bottom:42px !important;
-    }
-
-    .footer-container{
-        padding-top:34px;
-        padding-bottom:20px;
-    }
-
-    .footer-brand{
-        margin-top:20px;
-        padding-top:20px;
     }
 }
