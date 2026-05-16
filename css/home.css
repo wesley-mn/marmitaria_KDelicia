@@ -1,32 +1,134 @@
 .section{padding:46px 20px 72px}
 .hero-home{
-    width:min(1100px,100%);
+    width:min(1220px,100%);
     margin:0 auto;
     display:grid;
-    grid-template-columns:1.12fr .88fr;
+    grid-template-columns:1.1fr .9fr;
     align-items:center;
-    gap:34px;
-    padding:24px;
-    border-radius:30px;
-    background:linear-gradient(135deg,rgba(255,255,255,.20),rgba(255,255,255,.07));
-    border:1px solid rgba(255,255,255,.26);
-    box-shadow:var(--shadow);
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    gap:50px;
+    padding:10px 10px 30px;
 }
 .background{
     width:100%;
-    border:1px solid rgba(255,255,255,.34);
-    border-radius:24px;
-    box-shadow:0 18px 40px rgba(63,13,13,.28),inset 0 1px 0 rgba(255,255,255,.2);
+    max-width:620px;
+    height:430px;
     object-fit:cover;
+    border-radius:28px;
+    border:3px solid rgba(194,102,103,.65);
+    box-shadow:
+        0 20px 40px rgba(63,13,13,.30),
+        inset 0 1px 0 rgba(255,255,255,.20);
 }
-.container-marmitaria{text-align:center;padding:12px}
-.titulo{font-family:'Lato',Arial,sans-serif;font-size:clamp(42px,5vw,78px);font-weight:900;letter-spacing:.09em;color:#fff;margin:0;text-transform:uppercase;text-shadow:0 6px 18px rgba(0,0,0,.24)}
-.linha-decorativa{height:8px;width:min(260px,70%);margin:14px auto 24px;border-radius:999px;background:linear-gradient(90deg,transparent,#f1c875,#c26667,transparent);box-shadow:0 0 24px rgba(241,200,117,.35)}
-.descri_home{font-size:clamp(18px,2.2vw,27px);line-height:1.45;color:#fff;text-shadow:0 2px 10px rgba(0,0,0,.16)}.descri_home p{margin:0}
-.home-galeria{width:min(660px,100%);margin:34px auto 0;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:16px;border-radius:999px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
-.home1,.home2,.home3{width:112px;height:112px;object-fit:cover;border-radius:50%;border:1px solid rgba(255,255,255,.55);box-shadow:0 10px 26px rgba(63,13,13,.24);transition:.22s ease}.home1:hover,.home2:hover,.home3:hover{transform:translateY(-4px) scale(1.03)}
-.fitness{width:min(740px,100%);margin:44px auto 0;border-radius:22px;border:1px solid rgba(255,255,255,.28);box-shadow:var(--shadow);background:rgba(255,255,255,.12);padding:8px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-@media(max-width:820px){.section{padding:26px 12px 44px}.hero-home{grid-template-columns:1fr;gap:24px;padding:16px}.container-marmitaria{order:2}.background{order:1}.home-galeria{margin-top:24px;gap:12px;border-radius:24px}.home1,.home2,.home3{width:86px;height:86px}.fitness{margin-top:28px}}
-@media(max-width:480px){.titulo{font-size:36px}.descri_home{font-size:17px}.background{border-radius:18px}.home1,.home2,.home3{width:76px;height:76px}.hero-home{border-radius:22px}}
+
+.container-marmitaria{
+    text-align:left;
+    padding:0;
+}
+
+.titulo{
+    font-family:'Lato',Arial,sans-serif;
+    font-size:clamp(46px,5vw,78px);
+    font-weight:900;
+    letter-spacing:.08em;
+    color:#fff;
+    margin:0;
+    text-transform:uppercase;
+    text-shadow:0 6px 18px rgba(0,0,0,.24);
+}
+
+.linha-decorativa{
+    height:8px;
+    width:180px;
+    margin:14px 0 24px;
+    border-radius:999px;
+    background:linear-gradient(
+        90deg,
+        #c26667,
+        #f1c875
+    );
+}
+
+.descri_home{
+    max-width:520px;
+    font-size:clamp(20px,2vw,30px);
+    line-height:1.45;
+    color:#fff;
+    text-shadow:0 2px 10px rgba(0,0,0,.16);
+}
+
+.home-galeria{
+    width:100%;
+    margin:34px auto 0;
+    display:flex;
+    justify-content:center;
+    gap:24px;
+    flex-wrap:wrap;
+}
+
+.home1,.home2,.home3{
+    width:145px;
+    height:145px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid rgba(255,255,255,.50);
+    box-shadow:0 10px 26px rgba(63,13,13,.24);
+    transition:.22s ease;
+}
+
+.home1:hover,
+.home2:hover,
+.home3:hover{
+    transform:translateY(-6px) scale(1.04);
+}
+
+.fitness{
+    width:min(820px,100%);
+    margin:54px auto 0;
+    border-radius:24px;
+    border:1px solid rgba(255,255,255,.28);
+    box-shadow:var(--shadow);
+    background:rgba(255,255,255,.12);
+    padding:8px;
+}
+
+@media(max-width:900px){
+
+    .hero-home{
+        grid-template-columns:1fr;
+        gap:24px;
+        padding:0;
+    }
+
+    .background{
+        max-width:100%;
+        height:auto;
+    }
+
+    .container-marmitaria{
+        text-align:center;
+    }
+
+    .linha-decorativa{
+        margin:14px auto 24px;
+    }
+
+    .descri_home{
+        max-width:100%;
+        font-size:18px;
+    }
+
+    .home-galeria{
+        gap:14px;
+    }
+
+    .home1,
+    .home2,
+    .home3{
+        width:92px;
+        height:92px;
+    }
+
+    .fitness{
+        margin-top:30px;
+    }
+}
