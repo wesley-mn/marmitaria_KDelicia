@@ -58,7 +58,7 @@ a{
     grid-template-columns:150px 1fr 150px;
     align-items:center;
 
-    background:#6b1515;
+    background:#d9ad73;
     box-shadow:0 5px 18px rgba(60,10,10,.38);
     border-radius:0;
 }
@@ -430,10 +430,7 @@ a{
    Evita que header/footer e blocos fiquem pequenos demais
    ========================================================= */
 
-html,
-body{
-    background:#6b1515;
-}
+
 
 .container{
     width:100%;
@@ -567,5 +564,85 @@ body{
 
     .footer-section{
         padding:20px;
+    }
+}
+
+
+/* =========================================================
+   FIX FINAL: remove a área vermelha abaixo do footer
+   quando o navegador está com zoom muito baixo
+   ========================================================= */
+
+html,
+body{
+    background:#d9ad73 !important;
+    min-height:100%;
+}
+
+.container{
+    background:#d9ad73 !important;
+    min-height:auto !important;
+    display:block !important;
+}
+
+.site-footer{
+    margin:0 !important;
+    padding-bottom:0;
+}
+
+/* Em zoom baixo/telas muito largas, aumenta o rodapé para não parecer miniatura */
+@media(min-width:1600px){
+    .footer-container{
+        width:min(1500px, 78vw);
+        padding-top:52px;
+        padding-bottom:30px;
+    }
+
+    .footer-grid{
+        grid-template-columns:repeat(4, minmax(230px, 1fr));
+        gap:26px;
+    }
+
+    .footer-section{
+        padding:26px;
+    }
+
+    .footer-section h2{
+        font-size:30px;
+    }
+
+    .hours-list li{
+        font-size:16px;
+    }
+
+    .social-card strong,
+    .location-card strong{
+        font-size:17px;
+    }
+
+    .social-card small,
+    .location-card small{
+        font-size:15px;
+    }
+
+    .footer-brand strong{
+        font-size:48px;
+    }
+}
+
+/* Se a tela ficar baixa por causa do zoom, reduz espaços verticais sem criar sobra */
+@media(max-height:760px){
+    .section{
+        padding-bottom:42px !important;
+    }
+
+    .footer-container{
+        padding-top:34px;
+        padding-bottom:20px;
+    }
+
+    .footer-brand{
+        margin-top:20px;
+        padding-top:20px;
     }
 }
