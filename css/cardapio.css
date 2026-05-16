@@ -43,8 +43,7 @@
 .cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:70px 26px;
-    padding-top:45px;
+    gap:26px;
 }
 
 .card{
@@ -139,7 +138,7 @@
 }
 
 .card:hover .img{
-    transform:scale(2.7);
+    transform: scale(1.12);
 }
 
 .card h3{
