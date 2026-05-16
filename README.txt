@@ -1,10 +1,14 @@
-Versão corrigida.
+Versão ajustada exatamente para o print da página Início.
 
-Substitua seus arquivos por estes e mantenha sua pasta img original na raiz do projeto.
+Como usar:
+1. Extraia o ZIP.
+2. Copie sua pasta img original para a raiz.
+3. Substitua os arquivos do projeto pelos arquivos extraídos.
+4. Abra index.html com Live Server.
 
-Correções:
-- Header voltou a ocupar a largura toda, igual ao print.
-- Home com imagem grande à esquerda, texto à direita e 3 bolinhas.
-- Footer voltou a ocupar a largura toda e ficou legível.
-- Cardápio ajustado para não invadir título/cards.
-- Responsividade mantida para desktop, tablet e celular.
+Ajustes:
+- Header full width igual ao print.
+- Home com imagem grande à esquerda e texto à direita.
+- As 3 imagens circulares ficam abaixo do texto, não espalhadas na tela.
+- Totalmente responsivo para desktop/tablet/celular.
+- Footer full width e responsivo.
