@@ -98,10 +98,7 @@
     transform:translateY(-6px) scale(1.04);
 }
 
-/* Não aparece na página inicial do print */
-.fitness{
-    display:none !important;
-}
+
 
 /* Notebook */
 @media(max-width:1250px){
@@ -212,21 +209,24 @@
 }
 
 
-
-/* IMAGEM FITNESS ABAIXO DO CONTEÚDO */
+/* MARMITA FITNESS ABAIXO DO CONTEÚDO E ACIMA DO FOOTER */
 .fitness{
+    display:block !important;
     width:min(820px, 100%);
-    display:block;
-    margin:80px auto 0;
-    border-radius:20px;
+    height:auto;
+    margin:70px auto 0;
     object-fit:cover;
+    border-radius:18px;
     border:3px solid rgba(255,255,255,.35);
-    box-shadow:0 20px 40px rgba(0,0,0,.20);
+    box-shadow:0 20px 40px rgba(0,0,0,.22);
+    padding:7px;
+    background:rgba(255,255,255,.12);
 }
 
 @media(max-width:900px){
     .fitness{
         width:100%;
-        margin-top:45px;
+        margin-top:42px;
+        border-radius:16px;
     }
 }

@@ -418,3 +418,9 @@ a{
         gap:10px;
     }
 }
+
+
+/* Correção: footer sempre abaixo do conteúdo */
+.site-footer{
+    clear:both;
+}

@@ -1,15 +1,9 @@
-Versão EXATA da página Início conforme o print.
+Versão corrigida:
+- A marmita fitness foi colocada abaixo do conteúdo da home e acima do footer.
+- Ela está dentro da seção principal antes do rodapé.
+- Mantém responsividade.
 
-Importante:
-- Extraia este ZIP.
-- Copie sua pasta img original para dentro da pasta extraída.
-- Substitua os arquivos do seu projeto por estes.
-- Abra com Live Server.
-
-Mudanças:
-- Header full width.
-- Imagem principal grande igual ao print.
-- Texto à direita.
-- 3 imagens circulares abaixo do texto.
-- Imagem fitness removida da tela inicial porque não aparece no print.
-- Responsivo em desktop, tablet e celular.
+Use:
+1. Extraia o ZIP.
+2. Copie sua pasta img original para dentro da pasta extraída.
+3. Substitua os arquivos do projeto.
