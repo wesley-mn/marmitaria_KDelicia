@@ -357,3 +357,161 @@
         margin:0 0 16px;
     }
 }
+
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA MOBILE CARDÁPIO
+   ========================================================= */
+
+html,
+body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+.cardapio,
+.cards,
+.card,
+.tabela-cardapio,
+.div_table{
+    max-width:100%;
+    box-sizing:border-box;
+}
+
+@media(max-width:700px){
+
+    .section{
+        width:100%;
+        padding:0 0 42px;
+        overflow-x:hidden;
+    }
+
+    .vetor_fundo{
+        height:96px;
+        width:100%;
+        object-fit:cover;
+    }
+
+    .container-marmitaria{
+        height:96px;
+        margin:-96px 0 24px;
+        padding:0 14px;
+        overflow:hidden;
+    }
+
+    .titulo{
+        width:100%;
+        font-size:clamp(30px, 9vw, 42px);
+        line-height:1.1;
+        letter-spacing:.05em;
+        white-space:normal;
+        word-break:normal;
+    }
+
+    .cardapio{
+        width:100%;
+        padding:0 14px;
+        margin:0 auto;
+    }
+
+    .cards{
+        width:100%;
+        display:grid;
+        grid-template-columns:1fr;
+        gap:18px;
+        padding:0;
+        margin:0;
+    }
+
+    .card{
+        width:100%;
+        min-width:0;
+        min-height:auto;
+        border-radius:18px;
+        padding:22px 18px;
+        display:grid;
+        grid-template-columns:82px 1fr;
+        grid-template-areas:
+            "foto titulo"
+            "foto texto";
+        column-gap:16px;
+        align-items:start;
+        overflow:hidden;
+    }
+
+    .div_img{
+        grid-area:foto;
+        position:relative;
+        top:auto;
+        right:auto;
+        width:82px;
+        height:82px;
+        margin:0;
+        align-self:start;
+    }
+
+    .card h3{
+        grid-area:titulo;
+        margin:4px 0 10px;
+        font-size:clamp(21px, 6vw, 28px);
+        line-height:1.1;
+    }
+
+    .card p{
+        grid-column:2;
+        margin:4px 0;
+        font-size:clamp(15px, 4.2vw, 18px);
+        line-height:1.25;
+    }
+
+    .img{
+        transform:scale(1.45);
+    }
+
+    .card:hover .img{
+        transform:scale(1.55);
+    }
+
+    .tabela-cardapio{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .div_table{
+        width:100%;
+        margin:26px auto 0;
+        padding:16px;
+        overflow-x:auto;
+        border-radius:16px;
+    }
+
+    .table{
+        min-width:520px;
+    }
+}
+
+@media(max-width:420px){
+
+    .cardapio{
+        padding:0 12px;
+    }
+
+    .card{
+        grid-template-columns:72px 1fr;
+        column-gap:14px;
+        padding:18px 14px;
+    }
+
+    .div_img{
+        width:72px;
+        height:72px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    .card p{
+        font-size:15px;
+    }
+}
