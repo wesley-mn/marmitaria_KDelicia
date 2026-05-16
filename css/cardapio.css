@@ -43,7 +43,8 @@
 .cards{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:26px;
+    gap:70px 26px;
+    padding-top:45px;
 }
 
 .card{
@@ -51,7 +52,7 @@
     overflow:visible;
     isolation:isolate;
     min-height:300px;
-    padding:34px 22px 26px;
+    padding:90px 22px 26px;
     text-align:center;
     border-radius:30px;
     border:1px solid rgba(255,255,255,.48);
@@ -103,7 +104,7 @@
 .div_img{
     width:120px;
     height:120px;
-    margin:-95px auto 25px;
+    margin:-70px auto 25px;
     border-radius:50%;
     overflow:hidden;
     background:rgba(255,255,255,.35);
@@ -118,6 +119,7 @@
         inset 0 2px 4px rgba(255,255,255,.35);
     position:relative;
     z-index:5;
+    transition:.4s ease;
 }
 
 .div_img::before{
@@ -138,7 +140,7 @@
 }
 
 .card:hover .img{
-    transform: scale(1.12);
+    transform:scale(2.7);
 }
 
 .card h3{
@@ -259,4 +261,41 @@
 .card:hover .div_img{
     transform:translateY(-4px);
     transition:.4s ease;
+}
+
+
+/* Ajuste final responsivo dos cards */
+@media(max-width:1024px){
+    .cards{
+        grid-template-columns:repeat(2,1fr);
+        gap:66px 22px;
+        padding-top:40px;
+    }
+}
+
+@media(max-width:700px){
+    .cards{
+        grid-template-columns:1fr;
+        gap:58px;
+        padding-top:35px;
+    }
+
+    .card{
+        padding:80px 16px 24px;
+        min-height:auto;
+    }
+
+    .div_img{
+        width:105px;
+        height:105px;
+        margin:-60px auto 20px;
+    }
+
+    .img{
+        transform:scale(2.35);
+    }
+
+    .card:hover .img{
+        transform:scale(2.55);
+    }
 }
