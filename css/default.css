@@ -563,3 +563,89 @@ body{
         padding:30px 0 24px;
     }
 }
+
+
+/* =========================================================
+   HEADER FIXO + AUMENTA EM TELAS MENORES/ZOOM BAIXO
+   ========================================================= */
+
+.header{
+    position:fixed !important;
+    top:0;
+    left:0;
+    right:0;
+    z-index:9999;
+    width:100%;
+    background:#6b1515 !important;
+}
+
+/* Compensa o header fixo para o conteúdo não ficar escondido */
+.container{
+    padding-top:100px;
+}
+
+/* Quando a tela/zoom deixa tudo pequeno, o header cresce */
+@media(min-width:1600px){
+    .header{
+        min-height:130px !important;
+    }
+
+    .container{
+        padding-top:130px;
+    }
+
+    .logo{
+        width:105px !important;
+        height:105px !important;
+    }
+
+    .menu a{
+        font-size:34px !important;
+    }
+}
+
+/* Tablet */
+@media(max-width:980px){
+    .header{
+        min-height:145px !important;
+        padding-top:14px !important;
+        padding-bottom:18px !important;
+    }
+
+    .container{
+        padding-top:145px;
+    }
+
+    .logo{
+        width:82px !important;
+        height:82px !important;
+    }
+
+    .menu a{
+        font-size:18px !important;
+    }
+}
+
+/* Celular */
+@media(max-width:640px){
+    .header{
+        min-height:138px !important;
+    }
+
+    .container{
+        padding-top:138px;
+    }
+
+    .logo{
+        width:72px !important;
+        height:72px !important;
+    }
+
+    .menu ul{
+        gap:10px !important;
+    }
+
+    .menu a{
+        font-size:14px !important;
+    }
+}
