@@ -784,3 +784,43 @@ body{
         max-width:94% !important;
     }
 }
+
+
+/* =========================================================
+   FIX GLOBAL MOBILE: títulos nunca ficam atrás/colados no header
+   ========================================================= */
+
+@media(max-width:700px){
+
+    body,
+    html{
+        overflow-x:hidden !important;
+    }
+
+    .container{
+        width:100% !important;
+        overflow-x:hidden !important;
+    }
+
+    .section{
+        padding-top:32px !important;
+    }
+
+    .titulo,
+    .titulo-compras,
+    .mvv-titulo,
+    .tit_table{
+        position:relative !important;
+        z-index:2 !important;
+        margin-top:0 !important;
+        padding-top:0 !important;
+        line-height:1.12 !important;
+        text-align:center !important;
+    }
+}
+
+@media(max-width:420px){
+    .section{
+        padding-top:38px !important;
+    }
+}
