@@ -581,3 +581,54 @@ body{
         font-size:clamp(31px, 8.6vw, 40px) !important;
     }
 }
+
+
+/* ===== AJUSTE REAL DO TÍTULO NO MEIO DA IMAGEM BORRADA ===== */
+@media(max-width:700px){
+
+    .vetor_fundo{
+        height:130px !important;
+    }
+
+    .container-marmitaria{
+        height:130px !important;
+        margin:-130px 0 28px !important;
+        padding:0 !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+    }
+
+    .titulo{
+        height:auto !important;
+        min-height:130px !important;
+
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+
+        padding-top:24px !important;
+        transform:translateY(8px) !important;
+
+        margin:0 !important;
+        line-height:1 !important;
+    }
+}
+
+@media(max-width:420px){
+
+    .vetor_fundo{
+        height:126px !important;
+    }
+
+    .container-marmitaria{
+        height:126px !important;
+        margin:-126px 0 26px !important;
+    }
+
+    .titulo{
+        min-height:126px !important;
+        padding-top:24px !important;
+        transform:translateY(8px) !important;
+    }
+}
