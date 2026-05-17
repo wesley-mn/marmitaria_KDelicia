@@ -1,11 +1,8 @@
-/* HOME EXATA DO PRINT + RESPONSIVA */
-
 .section{
     padding:44px 5% 70px;
-    background:#d9ad73;
+    background:linear-gradient(180deg,#e2bb84 0%,#d6a86d 100%);
 }
 
-/* Foto grande à esquerda, conteúdo à direita */
 .hero-home{
     width:min(1240px,100%);
     margin:0 auto;
@@ -16,11 +13,10 @@
     gap:64px;
 }
 
-/* IMAGEM PRINCIPAL: tamanho igual ao print */
 .background{
-    width:620px !important;
+    width:620px;
     max-width:100%;
-    height:410px !important;
+    height:410px;
     object-fit:cover;
     border-radius:22px;
     border:3px solid rgba(194,102,103,.80);
@@ -65,11 +61,8 @@
     text-shadow:0 3px 10px rgba(0,0,0,.15);
 }
 
-.descri_home p{
-    margin:0;
-}
+.descri_home p{margin:0}
 
-/* BOLINHAS: abaixo do texto e na mesma coluna */
 .home-galeria{
     width:100%;
     margin:44px 0 0;
@@ -80,11 +73,9 @@
     flex-wrap:wrap;
 }
 
-.home1,
-.home2,
-.home3{
-    width:145px !important;
-    height:145px !important;
+.home1,.home2,.home3{
+    width:145px;
+    height:145px;
     object-fit:cover;
     border-radius:50%;
     border:4px solid rgba(255,255,255,.58);
@@ -92,15 +83,59 @@
     transition:.25s ease;
 }
 
-.home1:hover,
-.home2:hover,
-.home3:hover{
+.home1:hover,.home2:hover,.home3:hover{
     transform:translateY(-6px) scale(1.04);
 }
 
+.fitness{
+    display:block;
+    width:min(820px,100%);
+    height:auto;
+    margin:70px auto 0;
+    object-fit:cover;
+    border-radius:18px;
+    border:3px solid rgba(255,255,255,.35);
+    box-shadow:0 20px 40px rgba(0,0,0,.22);
+    padding:7px;
+    background:rgba(255,255,255,.12);
+}
 
+@media(min-width:1600px){
+    .section{
+        padding-top:clamp(52px,3.2vw,76px);
+        padding-bottom:clamp(72px,4vw,100px);
+    }
 
-/* Notebook */
+    .hero-home{
+        width:min(1450px,82vw);
+        grid-template-columns:minmax(620px,1.05fr) minmax(520px,.95fr);
+        gap:clamp(70px,5vw,105px);
+    }
+
+    .background{
+        width:100%;
+        height:clamp(430px,25vw,560px);
+    }
+
+    .titulo{
+        font-size:clamp(64px,3.8vw,86px);
+    }
+
+    .descri_home{
+        font-size:clamp(30px,1.8vw,42px);
+    }
+
+    .home1,.home2,.home3{
+        width:clamp(145px,8vw,185px);
+        height:clamp(145px,8vw,185px);
+    }
+
+    .fitness{
+        width:min(920px,52vw);
+        margin-top:clamp(70px,4vw,100px);
+    }
+}
+
 @media(max-width:1250px){
     .hero-home{
         grid-template-columns:minmax(420px,1fr) minmax(380px,1fr);
@@ -108,8 +143,8 @@
     }
 
     .background{
-        width:100% !important;
-        height:360px !important;
+        width:100%;
+        height:360px;
     }
 
     .titulo{
@@ -120,30 +155,28 @@
         font-size:24px;
     }
 
-    .home1,
-    .home2,
-    .home3{
-        width:120px !important;
-        height:120px !important;
+    .home1,.home2,.home3{
+        width:120px;
+        height:120px;
     }
 }
 
-/* Tablet / celular grande */
 @media(max-width:900px){
     .section{
-        padding:30px 16px 50px;
+        padding:26px 16px 50px;
     }
 
     .hero-home{
+        width:100%;
         grid-template-columns:1fr;
-        gap:30px;
+        gap:34px;
     }
 
     .background{
-        width:100% !important;
+        width:100%;
         max-width:760px;
-        height:auto !important;
-        margin:0 auto;
+        height:auto;
+        margin:22px auto 0;
     }
 
     .container-marmitaria{
@@ -171,19 +204,28 @@
         margin-top:28px;
     }
 
-    .home1,
-    .home2,
-    .home3{
-        width:100px !important;
-        height:100px !important;
+    .home1,.home2,.home3{
+        width:100px;
+        height:100px;
         border-width:3px;
+    }
+
+    .fitness{
+        width:100%;
+        margin-top:42px;
+        border-radius:16px;
     }
 }
 
-/* Celular pequeno */
 @media(max-width:480px){
     .section{
-        padding:24px 12px 42px;
+        padding:22px 12px 42px;
+    }
+
+    .background{
+        width:94%;
+        margin-top:20px;
+        border-radius:22px;
     }
 
     .titulo{
@@ -200,144 +242,12 @@
         gap:12px;
     }
 
-    .home1,
-    .home2,
-    .home3{
-        width:78px !important;
-        height:78px !important;
-    }
-}
-
-
-/* MARMITA FITNESS ABAIXO DO CONTEÚDO E ACIMA DO FOOTER */
-.fitness{
-    display:block !important;
-    width:min(820px, 100%);
-    height:auto;
-    margin:70px auto 0;
-    object-fit:cover;
-    border-radius:18px;
-    border:3px solid rgba(255,255,255,.35);
-    box-shadow:0 20px 40px rgba(0,0,0,.22);
-    padding:7px;
-    background:rgba(255,255,255,.12);
-}
-
-@media(max-width:900px){
-    .fitness{
-        width:100%;
-        margin-top:42px;
-        border-radius:16px;
-    }
-}
-
-
-/* =========================================================
-   HOME RESPONSIVA FINAL - evita miniatura no zoom baixo
-   ========================================================= */
-
-@media(min-width:1600px){
-    .section{
-        padding-top:clamp(52px, 3.2vw, 76px);
-        padding-bottom:clamp(72px, 4vw, 100px);
-    }
-
-    .hero-home{
-        width:min(1450px, 82vw);
-        grid-template-columns:minmax(620px, 1.05fr) minmax(520px, .95fr);
-        gap:clamp(70px, 5vw, 105px);
-    }
-
-    .background{
-        width:100% !important;
-        height:clamp(430px, 25vw, 560px) !important;
-    }
-
-    .titulo{
-        font-size:clamp(64px, 3.8vw, 86px);
-    }
-
-    .descri_home{
-        font-size:clamp(30px, 1.8vw, 42px);
-    }
-
-    .home1,
-    .home2,
-    .home3{
-        width:clamp(145px, 8vw, 185px) !important;
-        height:clamp(145px, 8vw, 185px) !important;
+    .home1,.home2,.home3{
+        width:78px;
+        height:78px;
     }
 
     .fitness{
-        width:min(920px, 52vw) !important;
-        margin-top:clamp(70px, 4vw, 100px);
-    }
-}
-
-@media(max-width:900px){
-    .hero-home{
-        width:92vw;
-    }
-
-    .background{
-        width:100% !important;
-        height:auto !important;
-    }
-
-    .fitness{
-        width:92vw !important;
-    }
-}
-
-
-/* =========================================================
-   AJUSTE RESPONSIVO MOBILE SEM CORTAR IMAGEM
-   ========================================================= */
-
-@media(max-width:700px){
-
-    header{
-        position:relative !important;
-        padding-bottom:18px !important;
-    }
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:18px !important;
-        padding-top:0 !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:92% !important;
-        max-width:92% !important;
-        display:block !important;
-        margin:0 auto !important;
-        object-fit:cover !important;
-        border-radius:24px !important;
-    }
-
-    .titulo_inicio,
-    .texto_inicio,
-    .hero-texto{
-        margin-top:24px !important;
-    }
-}
-
-@media(max-width:420px){
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:14px !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:94% !important;
-        max-width:94% !important;
+        width:94%;
     }
 }

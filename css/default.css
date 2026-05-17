@@ -2,17 +2,19 @@
 
 :root{
     --vinho:#6b1515;
+    --vinho-escuro:#4a0d10;
+    --vinho-card:#7a2635;
     --dourado:#f1c875;
     --fundo:#d9ad73;
-    --shadow:0 24px 60px rgba(41,7,9,.26);
+    --fundo-claro:#e3bd87;
+    --texto:#2d160f;
+    --branco:#fff;
+    --shadow:0 22px 54px rgba(41,7,9,.24);
 }
 
-*{
-    box-sizing:border-box;
-}
+*{box-sizing:border-box}
 
-html,
-body{
+html,body{
     width:100%;
     min-height:100%;
     margin:0;
@@ -23,7 +25,7 @@ body{
 body{
     font-family:'Lato',Arial,sans-serif;
     color:#fff;
-    background:#d9ad73;
+    background:#3a3a3a;
 }
 
 img{
@@ -38,29 +40,27 @@ a{
 }
 
 .container{
-    width:100%;
+    width:min(100%, 100vw);
     min-height:100vh;
-    margin:0;
+    margin:0 auto;
     overflow-x:hidden;
-    background:#d9ad73;
+    background:var(--fundo);
 }
 
-/* HEADER igual ao print */
+/* CABEÇALHO — sticky, não cobre conteúdo e cresce no mobile */
 .header{
     width:100%;
-    height:100px;
+    min-height:100px;
     margin:0;
-    padding:0 5%;
-    position:relative;
-    z-index:1000;
-
+    padding:10px clamp(18px,5vw,80px);
+    position:sticky;
+    top:0;
+    z-index:9999;
     display:grid;
-    grid-template-columns:150px 1fr 150px;
+    grid-template-columns:130px 1fr 130px;
     align-items:center;
-
-    background:#6b1515;
+    background:var(--vinho);
     box-shadow:0 5px 18px rgba(60,10,10,.38);
-    border-radius:0;
 }
 
 .logo{
@@ -71,9 +71,7 @@ a{
     justify-self:start;
 }
 
-.menu{
-    justify-self:center;
-}
+.menu{justify-self:center}
 
 .menu ul{
     list-style:none;
@@ -82,20 +80,15 @@ a{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:clamp(42px,6vw,95px);
+    gap:clamp(30px,5vw,90px);
     flex-wrap:nowrap;
-}
-
-.menu li{
-    margin:0;
-    padding:0;
 }
 
 .menu a{
     display:block;
     color:#fff;
     font-family:'Lato',Arial,sans-serif;
-    font-size:clamp(18px,2vw,32px);
+    font-size:clamp(18px,1.9vw,32px);
     font-weight:900;
     letter-spacing:.08em;
     text-transform:uppercase;
@@ -105,7 +98,7 @@ a{
 }
 
 .menu a:hover{
-    color:#f1c875;
+    color:var(--dourado);
     transform:translateY(-2px);
 }
 
@@ -113,16 +106,18 @@ a{
     width:100%;
     margin:0;
     position:relative;
-    background:#d9ad73;
+    background:linear-gradient(180deg,#e2bb84 0%,#d6a86d 100%);
 }
 
-/* Footer responsivo */
+/* RODAPÉ */
 .site-footer{
     width:100%;
     margin:0;
     padding:0;
     color:#fff;
-    background:linear-gradient(135deg,#5a1114 0%,#6b1515 50%,#7a1f25 100%);
+    background:
+        radial-gradient(circle at top left,rgba(241,200,117,.16),transparent 28%),
+        linear-gradient(135deg,#5a1114 0%,#6b1515 50%,#7a1f25 100%);
     border-top:1px solid rgba(241,200,117,.35);
 }
 
@@ -191,10 +186,7 @@ a{
     line-height:1.35;
 }
 
-.social-grid{
-    display:grid;
-    gap:14px;
-}
+.social-grid{display:grid;gap:14px}
 
 .social-card{
     display:flex;
@@ -207,6 +199,13 @@ a{
     transition:.22s ease;
 }
 
+.social-card:hover,
+.location-card:hover,
+.payment-card:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.14);
+}
+
 .social-card img{
     width:52px;
     height:52px;
@@ -215,18 +214,10 @@ a{
 }
 
 .social-card strong,
-.social-card small{
-    display:block;
-}
+.social-card small{display:block}
 
-.social-card strong{
-    font-size:17px;
-}
-
-.social-card small{
-    font-size:14px;
-    opacity:.95;
-}
+.social-card strong{font-size:17px}
+.social-card small{font-size:14px;opacity:.95}
 
 .payment-grid{
     display:grid;
@@ -245,6 +236,7 @@ a{
     align-items:center;
     justify-content:center;
     gap:8px;
+    transition:.22s ease;
 }
 
 .payment-card img{
@@ -271,17 +263,14 @@ a{
     border:1px solid rgba(241,200,117,.36);
     border-radius:16px;
     background:rgba(255,255,255,.08);
+    transition:.22s ease;
 }
 
-.location-card .pin{
-    font-size:32px;
-}
+.location-card .pin{font-size:32px}
 
 .location-card strong,
 .location-card small,
-.location-card em{
-    display:block;
-}
+.location-card em{display:block}
 
 .location-card strong{
     font-size:16px;
@@ -295,7 +284,7 @@ a{
 
 .location-card em{
     margin-top:8px;
-    color:#f1c875;
+    color:var(--dourado);
     font-style:normal;
     font-weight:900;
 }
@@ -320,9 +309,7 @@ a{
 
 .footer-brand span,
 .footer-brand strong,
-.footer-brand small{
-    display:block;
-}
+.footer-brand small{display:block}
 
 .footer-brand span{
     font-family:Georgia,'Times New Roman',serif;
@@ -339,9 +326,7 @@ a{
     line-height:1;
 }
 
-.footer-brand small{
-    font-size:15px;
-}
+.footer-brand small{font-size:15px}
 
 .footer-copy{
     text-align:center;
@@ -350,20 +335,50 @@ a{
     opacity:.95;
 }
 
-@media(max-width:980px){
+@media(min-width:1600px){
     .header{
-        height:auto;
-        min-height:120px;
-        padding:14px 12px 18px;
+        min-height:clamp(110px,5.8vw,145px);
+        padding-left:5.5%;
+        padding-right:5.5%;
+    }
+
+    .logo{
+        width:clamp(90px,4.6vw,120px);
+        height:clamp(90px,4.6vw,120px);
+    }
+
+    .menu a{
+        font-size:clamp(24px,1.55vw,38px);
+    }
+
+    .menu ul{
+        gap:clamp(56px,5.4vw,120px);
+    }
+
+    .footer-container{
+        width:min(1500px,82vw);
+    }
+}
+
+@media(max-width:1100px){
+    .footer-grid{
+        grid-template-columns:repeat(2,minmax(260px,1fr));
+    }
+}
+
+@media(max-width:760px){
+    .header{
+        min-height:200px;
+        padding:18px 12px 22px;
         grid-template-columns:1fr;
         justify-items:center;
-        gap:10px;
+        gap:14px;
     }
 
     .logo{
         justify-self:center;
-        width:76px;
-        height:76px;
+        width:86px;
+        height:86px;
     }
 
     .menu{
@@ -371,38 +386,23 @@ a{
     }
 
     .menu ul{
-        gap:14px;
+        gap:12px 22px;
         flex-wrap:wrap;
     }
 
     .menu a{
-        font-size:15px;
-        padding:6px 8px;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-@media(max-width:640px){
-    .menu ul{
-        gap:8px;
-    }
-
-    .menu a{
-        font-size:13px;
-        padding:5px 6px;
-    }
-
-    .footer-container{
-        width:92%;
-        padding:30px 0 22px;
+        font-size:18px;
+        padding:6px 4px;
     }
 
     .footer-grid{
         grid-template-columns:1fr;
         gap:16px;
+    }
+
+    .footer-container{
+        width:92%;
+        padding:30px 0 22px;
     }
 
     .footer-section{
@@ -419,408 +419,21 @@ a{
     }
 }
 
-
-/* Correção: footer sempre abaixo do conteúdo */
-.site-footer{
-    clear:both;
-}
-
-
-/* =========================================================
-   RESPONSIVO FINAL - HEADER, FOOTER E ZOOM BAIXO
-   ========================================================= */
-
-html,
-body{
-    min-height:100%;
-    background:#6b1515 !important;
-}
-
-.container{
-    min-height:100vh !important;
-    display:flex !important;
-    flex-direction:column !important;
-    background:#d9ad73 !important;
-}
-
-/* Header sempre vinho, nunca amarelo */
-.header{
-    background:#6b1515 !important;
-    min-height:100px;
-    box-shadow:0 5px 18px rgba(60,10,10,.38);
-}
-
-.logo{
-    width:84px;
-    height:84px;
-}
-
-.menu a{
-    font-size:clamp(18px, 1.55vw, 34px);
-}
-
-/* Conteúdo fica natural */
-.section{
-    flex:0 0 auto;
-}
-
-/* Footer vem logo depois do conteúdo e cresce para cobrir o restante da tela */
-.site-footer{
-    margin:0 !important;
-    flex:1 0 auto !important;
-    background:
-        radial-gradient(circle at top left,rgba(241,200,117,.16),transparent 28%),
-        linear-gradient(135deg,#5a1114 0%,#6b1515 50%,#7a1f25 100%) !important;
-}
-
-/* Footer maior e legível quando a tela fica muito larga/zoom baixo */
-.footer-container{
-    width:min(1320px, 92vw);
-}
-
-.footer-grid{
-    grid-template-columns:repeat(4, minmax(210px, 1fr));
-    gap:clamp(18px, 1.6vw, 28px);
-}
-
-.footer-section{
-    padding:clamp(22px, 1.6vw, 30px);
-}
-
-.footer-section h2{
-    font-size:clamp(24px, 1.65vw, 34px);
-}
-
-.hours-list li{
-    font-size:clamp(14px, .9vw, 18px);
-}
-
-.social-card strong,
-.location-card strong{
-    font-size:clamp(15px, .95vw, 19px);
-}
-
-.social-card small,
-.location-card small{
-    font-size:clamp(13px, .8vw, 16px);
-}
-
-.footer-brand strong{
-    font-size:clamp(34px, 3vw, 54px);
-}
-
-/* Quando o navegador estiver muito largo por zoom baixo, aumenta tudo proporcionalmente */
-@media(min-width:1600px){
+@media(max-width:420px){
     .header{
-        min-height:clamp(110px, 5.8vw, 145px);
-        padding-left:5.5%;
-        padding-right:5.5%;
+        min-height:210px;
     }
 
     .logo{
-        width:clamp(90px, 4.6vw, 120px);
-        height:clamp(90px, 4.6vw, 120px);
-    }
-
-    .menu a{
-        font-size:clamp(24px, 1.55vw, 38px);
+        width:82px;
+        height:82px;
     }
 
     .menu ul{
-        gap:clamp(56px, 5.4vw, 120px);
-    }
-
-    .footer-container{
-        width:min(1500px, 82vw);
-        padding-top:54px;
-        padding-bottom:36px;
-    }
-
-    .footer-grid{
-        grid-template-columns:repeat(4, minmax(240px, 1fr));
-    }
-}
-
-/* Tablet */
-@media(max-width:1100px){
-    .footer-grid{
-        grid-template-columns:repeat(2, minmax(260px, 1fr));
-    }
-}
-
-/* Mobile */
-@media(max-width:640px){
-    .header{
-        min-height:auto;
-    }
-
-    .footer-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-container{
-        width:92vw;
-        padding:30px 0 24px;
-    }
-}
-
-
-/* =========================================================
-   HEADER FIXO + AUMENTA EM TELAS MENORES/ZOOM BAIXO
-   ========================================================= */
-
-.header{
-    position:fixed !important;
-    top:0;
-    left:0;
-    right:0;
-    z-index:9999;
-    width:100%;
-    background:#6b1515 !important;
-}
-
-/* Compensa o header fixo para o conteúdo não ficar escondido */
-.container{
-    padding-top:100px;
-}
-
-/* Quando a tela/zoom deixa tudo pequeno, o header cresce */
-@media(min-width:1600px){
-    .header{
-        min-height:130px !important;
-    }
-
-    .container{
-        padding-top:130px;
-    }
-
-    .logo{
-        width:105px !important;
-        height:105px !important;
+        gap:10px 18px;
     }
 
     .menu a{
-        font-size:34px !important;
-    }
-}
-
-/* Tablet */
-@media(max-width:980px){
-    .header{
-        min-height:145px !important;
-        padding-top:14px !important;
-        padding-bottom:18px !important;
-    }
-
-    .container{
-        padding-top:145px;
-    }
-
-    .logo{
-        width:82px !important;
-        height:82px !important;
-    }
-
-    .menu a{
-        font-size:18px !important;
-    }
-}
-
-/* Celular */
-@media(max-width:640px){
-    .header{
-        min-height:138px !important;
-    }
-
-    .container{
-        padding-top:138px;
-    }
-
-    .logo{
-        width:72px !important;
-        height:72px !important;
-    }
-
-    .menu ul{
-        gap:10px !important;
-    }
-
-    .menu a{
-        font-size:14px !important;
-    }
-}
-
-
-/* =========================================================
-   CORREÇÃO MOBILE IMAGEM INÍCIO
-   ========================================================= */
-
-.img_prato{
-    width:100%;
-    padding:18px 18px 0;
-    box-sizing:border-box;
-}
-
-.img_prato img{
-    width:100%;
-    display:block;
-
-    border-radius:26px;
-
-    object-fit:cover;
-
-    box-shadow:
-    0 12px 30px rgba(0,0,0,.28);
-
-    border:3px solid rgba(180,90,90,.55);
-}
-
-@media(max-width:700px){
-
-    .img_prato{
-        padding:22px 18px 0 !important;
-    }
-
-    .img_prato img{
-        border-radius:24px !important;
-    }
-}
-
-@media(max-width:420px){
-
-    .img_prato{
-        padding:26px 20px 0 !important;
-    }
-
-    .img_prato img{
-        border-radius:22px !important;
-    }
-}
-
-
-/* ===== GAP REAL ENTRE HEADER E IMAGEM ===== */
-
-@media(max-width:700px){
-
-    header{
-        padding-bottom:24px !important;
-    }
-
-    .img_prato{
-        padding-top:34px !important;
-    }
-
-    .img_prato img{
-        margin-top:8px !important;
-    }
-}
-
-@media(max-width:420px){
-
-    header{
-        padding-bottom:28px !important;
-    }
-
-    .img_prato{
-        padding-top:38px !important;
-    }
-
-    .img_prato img{
-        margin-top:10px !important;
-    }
-}
-
-
-
-
-/* =========================================================
-   AJUSTE RESPONSIVO MOBILE SEM CORTAR IMAGEM
-   ========================================================= */
-
-@media(max-width:700px){
-
-    header{
-        position:relative !important;
-        padding-bottom:18px !important;
-    }
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:18px !important;
-        padding-top:0 !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:92% !important;
-        max-width:92% !important;
-        display:block !important;
-        margin:0 auto !important;
-        object-fit:cover !important;
-        border-radius:24px !important;
-    }
-
-    .titulo_inicio,
-    .texto_inicio,
-    .hero-texto{
-        margin-top:24px !important;
-    }
-}
-
-@media(max-width:420px){
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:14px !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:94% !important;
-        max-width:94% !important;
-    }
-}
-
-
-/* =========================================================
-   FIX GLOBAL MOBILE: títulos nunca ficam atrás/colados no header
-   ========================================================= */
-
-@media(max-width:700px){
-
-    body,
-    html{
-        overflow-x:hidden !important;
-    }
-
-    .container{
-        width:100% !important;
-        overflow-x:hidden !important;
-    }
-
-    .section{
-        padding-top:32px !important;
-    }
-
-    .titulo,
-    .titulo-compras,
-    .mvv-titulo,
-    .tit_table{
-        position:relative !important;
-        z-index:2 !important;
-        margin-top:0 !important;
-        padding-top:0 !important;
-        line-height:1.12 !important;
-        text-align:center !important;
-    }
-}
-
-@media(max-width:420px){
-    .section{
-        padding-top:38px !important;
+        font-size:16px;
     }
 }

@@ -1,7 +1,3 @@
-/* =========================================================
-   CARDÁPIO - igual ao modelo dos prints + responsivo
-   ========================================================= */
-
 :root{
     --vinho:#6b1515;
     --vinho2:#7a2635;
@@ -10,17 +6,15 @@
     --texto:#321d14;
 }
 
-/* Seção geral */
 .section{
     padding:0 0 70px;
     background:
-        radial-gradient(circle at 50% 20%, rgba(255,255,255,.14), transparent 36%),
-        linear-gradient(180deg,#e2bb84 0%, #d6a86d 100%);
+        radial-gradient(circle at 50% 20%,rgba(255,255,255,.14),transparent 36%),
+        linear-gradient(180deg,#e2bb84 0%,#d6a86d 100%);
     color:#fff;
     overflow:hidden;
 }
 
-/* Banner superior com imagem desfocada */
 .vetor_fundo{
     display:block;
     width:100%;
@@ -55,21 +49,18 @@
     text-shadow:0 8px 24px rgba(0,0,0,.35);
 }
 
-/* Área do cardápio */
 .cardapio{
-    width:min(1210px, calc(100% - 48px));
+    width:min(1210px,calc(100% - 48px));
     margin:0 auto;
 }
 
-/* Grid dos cards */
 .cards{
     display:grid;
-    grid-template-columns:repeat(3, 1fr);
+    grid-template-columns:repeat(3,1fr);
     gap:26px 30px;
     align-items:stretch;
 }
 
-/* Card horizontal, elegante e claro */
 .card{
     min-height:214px;
     position:relative;
@@ -78,9 +69,7 @@
     padding:30px 132px 28px 26px;
     background:rgba(255,244,224,.34);
     border:1px solid rgba(255,255,255,.58);
-    box-shadow:
-        0 18px 38px rgba(80,35,15,.15),
-        inset 0 1px 0 rgba(255,255,255,.45);
+    box-shadow:0 18px 38px rgba(80,35,15,.15),inset 0 1px 0 rgba(255,255,255,.45);
     backdrop-filter:blur(10px);
     -webkit-backdrop-filter:blur(10px);
     transition:.25s ease;
@@ -88,9 +77,7 @@
 
 .card:hover{
     transform:translateY(-5px);
-    box-shadow:
-        0 24px 46px rgba(80,35,15,.22),
-        inset 0 1px 0 rgba(255,255,255,.55);
+    box-shadow:0 24px 46px rgba(80,35,15,.22),inset 0 1px 0 rgba(255,255,255,.55);
 }
 
 .div_img{
@@ -127,9 +114,7 @@
     transition:.3s ease;
 }
 
-.card:hover .img{
-    transform:scale(1.72);
-}
+.card:hover .img{transform:scale(1.72)}
 
 .card h3{
     margin:0 0 10px;
@@ -149,7 +134,6 @@
     line-height:1.28;
 }
 
-/* Tabela */
 .tabela-cardapio{
     grid-column:1 / -1;
 }
@@ -187,6 +171,7 @@
     color:var(--texto);
     font-family:Georgia,'Times New Roman',serif;
     font-size:16px;
+    table-layout:fixed;
 }
 
 .table th{
@@ -196,6 +181,7 @@
     text-transform:uppercase;
     letter-spacing:.12em;
     font-size:13px;
+    line-height:1.15;
 }
 
 .table td{
@@ -204,9 +190,7 @@
     border-bottom:1px solid rgba(107,21,21,.08);
 }
 
-.table tr:last-child td{
-    border-bottom:0;
-}
+.table tr:last-child td{border-bottom:0}
 
 .cat-label{
     display:inline-block;
@@ -221,565 +205,175 @@
     margin-bottom:7px;
 }
 
-/* Notebook / telas médias */
 @media(max-width:1180px){
     .cardapio{
-        width:min(1000px, calc(100% - 40px));
+        width:min(1000px,calc(100% - 40px));
     }
 
     .cards{
-        grid-template-columns:repeat(2, 1fr);
+        grid-template-columns:repeat(2,1fr);
     }
 }
 
-/* Tablet */
 @media(max-width:820px){
     .vetor_fundo,
     .container-marmitaria{
-        height:110px;
+        height:126px;
     }
 
     .container-marmitaria{
-        margin-top:-110px;
-        margin-bottom:34px;
-    }
-
-    .cardapio{
-        width:calc(100% - 28px);
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-        gap:22px;
-    }
-
-    .card{
-        min-height:190px;
-        padding:26px 124px 24px 24px;
-    }
-
-    .div_img{
-        width:88px;
-        height:88px;
-        right:22px;
-        top:26px;
-    }
-
-    .div_table{
-        margin-top:34px;
-        padding:20px;
-        overflow-x:auto;
-    }
-
-    .table{
-        min-width:620px;
-    }
-}
-
-/* Celular */
-@media(max-width:560px){
-    .section{
-        padding-bottom:44px;
-    }
-
-    .vetor_fundo,
-    .container-marmitaria{
-        height:94px;
-    }
-
-    .container-marmitaria{
-        margin-top:-94px;
-        margin-bottom:26px;
-    }
-
-    .titulo{
-        font-size:34px;
-        letter-spacing:.08em;
-    }
-
-    .card{
-        min-height:auto;
-        padding:22px 96px 22px 18px;
-        border-radius:16px;
-    }
-
-    .div_img{
-        width:72px;
-        height:72px;
-        right:16px;
-        top:22px;
-    }
-
-    .img{
-        transform:scale(1.5);
-    }
-
-    .card:hover .img{
-        transform:scale(1.62);
-    }
-
-    .card h3{
-        font-size:22px;
-    }
-
-    .card p{
-        font-size:15px;
-    }
-
-    .div_table{
-        padding:14px;
-    }
-
-    .tit_table{
-        font-size:17px;
-        letter-spacing:.10em;
-    }
-
-    .table{
-        min-width:540px;
-        font-size:14px;
-    }
-}
-
-/* Celular muito pequeno */
-@media(max-width:380px){
-    .card{
-        padding:18px;
-        text-align:left;
-    }
-
-    .div_img{
-        position:relative;
-        top:auto;
-        right:auto;
-        width:82px;
-        height:82px;
-        margin:0 0 16px;
-    }
-}
-
-
-/* =========================================================
-   CORREÇÃO DEFINITIVA MOBILE CARDÁPIO
-   ========================================================= */
-
-html,
-body{
-    max-width:100%;
-    overflow-x:hidden;
-}
-
-.cardapio,
-.cards,
-.card,
-.tabela-cardapio,
-.div_table{
-    max-width:100%;
-    box-sizing:border-box;
-}
-
-@media(max-width:700px){
-
-    .section{
-        width:100%;
-        padding:0 0 42px;
-        overflow-x:hidden;
-    }
-
-    .vetor_fundo{
-        height:96px;
-        width:100%;
-        object-fit:cover;
-    }
-
-    .container-marmitaria{
-        height:96px;
-        margin:-96px 0 24px;
-        padding:0 14px;
-        overflow:hidden;
-    }
-
-    .titulo{
-        width:100%;
-        font-size:clamp(30px, 9vw, 42px);
-        line-height:1.1;
-        letter-spacing:.05em;
-        white-space:normal;
-        word-break:normal;
+        margin-top:-126px;
+        margin-bottom:30px;
     }
 
     .cardapio{
         width:100%;
-        padding:0 14px;
-        margin:0 auto;
+        padding:0 16px;
     }
 
     .cards{
-        width:100%;
-        display:grid;
         grid-template-columns:1fr;
         gap:18px;
-        padding:0;
-        margin:0;
     }
 
     .card{
         width:100%;
-        min-width:0;
         min-height:auto;
         border-radius:18px;
         padding:22px 18px;
         display:grid;
         grid-template-columns:82px 1fr;
-        grid-template-areas:
-            "foto titulo"
-            "foto texto";
         column-gap:16px;
         align-items:start;
         overflow:hidden;
     }
 
     .div_img{
-        grid-area:foto;
         position:relative;
         top:auto;
         right:auto;
         width:82px;
         height:82px;
         margin:0;
-        align-self:start;
+        grid-row:1 / span 8;
     }
 
     .card h3{
-        grid-area:titulo;
         margin:4px 0 10px;
-        font-size:clamp(21px, 6vw, 28px);
-        line-height:1.1;
+        font-size:clamp(22px,6vw,30px);
     }
 
     .card p{
-        grid-column:2;
         margin:4px 0;
-        font-size:clamp(15px, 4.2vw, 18px);
+        font-size:clamp(15px,4.2vw,18px);
         line-height:1.25;
     }
 
-    .img{
-        transform:scale(1.45);
-    }
-
-    .card:hover .img{
-        transform:scale(1.55);
-    }
-
-    .tabela-cardapio{
-        width:100%;
-        overflow:hidden;
-    }
+    .img{transform:scale(1.45)}
+    .card:hover .img{transform:scale(1.55)}
 
     .div_table{
         width:100%;
-        margin:26px auto 0;
-        padding:16px;
-        overflow-x:auto;
-        border-radius:16px;
-    }
-
-    .table{
-        min-width:520px;
-    }
-}
-
-@media(max-width:420px){
-
-    .cardapio{
-        padding:0 12px;
-    }
-
-    .card{
-        grid-template-columns:72px 1fr;
-        column-gap:14px;
-        padding:18px 14px;
-    }
-
-    .div_img{
-        width:72px;
-        height:72px;
-    }
-
-    .card h3{
-        font-size:22px;
-    }
-
-    .card p{
-        font-size:15px;
-    }
-}
-
-
-/* =========================================================
-   MOBILE: título "NOSSO CARDÁPIO" SOBRE a imagem borrada
-   ========================================================= */
-@media(max-width:700px){
-
-    .section{
-        padding:0 0 42px !important;
-        overflow-x:hidden;
-    }
-
-    .vetor_fundo{
-        display:block !important;
-        width:100%;
-        height:122px !important;
-        object-fit:cover;
-        filter:blur(3px);
-        transform:scale(1.04);
-        opacity:.82;
-    }
-
-    .container-marmitaria{
-        height:122px !important;
-        margin:-122px 0 28px !important;
-        padding:0 12px !important;
-        position:relative !important;
-        z-index:3 !important;
-        display:flex !important;
-        align-items:center !important;
-        justify-content:center !important;
-        overflow:hidden !important;
-        background:rgba(90,35,20,.10);
-    }
-
-    .titulo{
-        width:100%;
-        margin:0 !important;
-        color:#fff !important;
-        text-align:center !important;
-        font-size:clamp(34px, 9vw, 48px) !important;
-        line-height:1.05 !important;
-        letter-spacing:.06em !important;
-        white-space:normal !important;
-        text-shadow:0 6px 18px rgba(0,0,0,.34) !important;
-    }
-
-    .cardapio{
-        margin-top:0 !important;
-    }
-}
-
-@media(max-width:420px){
-    .vetor_fundo{
-        height:112px !important;
-    }
-
-    .container-marmitaria{
-        height:112px !important;
-        margin:-112px 0 24px !important;
-    }
-
-    .titulo{
-        font-size:clamp(31px, 8.6vw, 40px) !important;
-    }
-}
-
-
-/* ===== AJUSTE REAL DO TÍTULO NO MEIO DA IMAGEM BORRADA ===== */
-@media(max-width:700px){
-
-    .vetor_fundo{
-        height:130px !important;
-    }
-
-    .container-marmitaria{
-        height:130px !important;
-        margin:-130px 0 28px !important;
-        padding:0 !important;
-        display:flex !important;
-        align-items:center !important;
-        justify-content:center !important;
-    }
-
-    .titulo{
-        height:auto !important;
-        min-height:130px !important;
-
-        display:flex !important;
-        align-items:center !important;
-        justify-content:center !important;
-
-        padding-top:24px !important;
-        transform:translateY(8px) !important;
-
-        margin:0 !important;
-        line-height:1 !important;
-    }
-}
-
-@media(max-width:420px){
-
-    .vetor_fundo{
-        height:126px !important;
-    }
-
-    .container-marmitaria{
-        height:126px !important;
-        margin:-126px 0 26px !important;
-    }
-
-    .titulo{
-        min-height:126px !important;
-        padding-top:24px !important;
-        transform:translateY(8px) !important;
-    }
-}
-
-
-/* =========================================================
-   CORREÇÃO TABELA DE PREÇOS NO MOBILE
-   Centraliza título, evita corte e remove scroll horizontal
-   ========================================================= */
-
-@media(max-width:700px){
-
-    .tabela-cardapio{
-        width:100% !important;
-        max-width:100% !important;
-        overflow:visible !important;
-        padding:0 !important;
-        margin:0 !important;
-        grid-column:1 / -1 !important;
-    }
-
-    .div_table{
-        width:100% !important;
-        max-width:100% !important;
-        margin:28px auto 0 !important;
-        padding:18px 12px !important;
-        overflow:visible !important;
-        border-radius:18px !important;
-        box-sizing:border-box !important;
+        margin:28px auto 0;
+        padding:18px 12px;
+        overflow:visible;
+        border-radius:18px;
     }
 
     .tit_table{
-        width:100% !important;
-        display:block !important;
-        text-align:center !important;
-        margin:0 auto 18px !important;
-        padding:0 8px !important;
-        font-size:clamp(20px, 6vw, 28px) !important;
-        line-height:1.15 !important;
-        letter-spacing:.14em !important;
-        box-sizing:border-box !important;
+        width:100%;
+        text-align:center;
+        margin:0 auto 18px;
+        padding:0 8px;
+        font-size:clamp(20px,6vw,28px);
+        line-height:1.15;
+        letter-spacing:.14em;
     }
 
     .table{
-        width:100% !important;
-        min-width:0 !important;
-        table-layout:fixed !important;
-        border-collapse:separate !important;
-        border-spacing:0 !important;
-        font-size:clamp(13px, 3.5vw, 16px) !important;
+        width:100%;
+        min-width:0;
+        table-layout:fixed;
+        font-size:clamp(13px,3.5vw,16px);
     }
 
     .table th,
     .table td{
-        width:auto !important;
-        padding:12px 6px !important;
-        white-space:normal !important;
-        word-break:break-word !important;
-        overflow-wrap:anywhere !important;
-        text-align:center !important;
+        padding:12px 6px;
+        white-space:normal;
+        word-break:break-word;
+        overflow-wrap:anywhere;
+        text-align:center;
     }
 
     .table th{
-        font-size:clamp(11px, 3.2vw, 14px) !important;
-        letter-spacing:.08em !important;
-        line-height:1.15 !important;
+        font-size:clamp(11px,3.2vw,14px);
+        letter-spacing:.08em;
     }
 
     .cat-label{
-        font-size:clamp(10px, 3vw, 12px) !important;
-        padding:4px 8px !important;
-        letter-spacing:.08em !important;
-        max-width:100% !important;
-        white-space:normal !important;
+        font-size:clamp(10px,3vw,12px);
+        padding:4px 8px;
+        letter-spacing:.08em;
     }
 }
 
-@media(max-width:420px){
+@media(max-width:480px){
+    .section{padding-bottom:42px}
+
+    .vetor_fundo,
+    .container-marmitaria{
+        height:120px;
+    }
+
+    .container-marmitaria{
+        margin-top:-120px;
+        margin-bottom:28px;
+    }
+
+    .titulo{
+        height:100%;
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:clamp(34px,9vw,44px);
+        line-height:1;
+        letter-spacing:.06em;
+    }
+
+    .cardapio{
+        padding:0 14px;
+    }
+
+    .card{
+        grid-template-columns:78px 1fr;
+        column-gap:14px;
+        padding:20px 14px;
+    }
+
+    .div_img{
+        width:78px;
+        height:78px;
+    }
+
+    .card h3{font-size:24px}
+    .card p{font-size:16px}
 
     .div_table{
-        padding:16px 8px !important;
+        padding:16px 8px;
     }
 
     .tit_table{
-        font-size:22px !important;
-        letter-spacing:.12em !important;
+        font-size:22px;
+        letter-spacing:.12em;
     }
 
     .table th,
     .table td{
-        padding:10px 4px !important;
+        padding:10px 4px;
     }
 
-    .table th{
-        font-size:11px !important;
-    }
-
-    .table td{
-        font-size:13px !important;
-    }
-}
-
-
-/* =========================================================
-   AJUSTE RESPONSIVO MOBILE SEM CORTAR IMAGEM
-   ========================================================= */
-
-@media(max-width:700px){
-
-    header{
-        position:relative !important;
-        padding-bottom:18px !important;
-    }
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:18px !important;
-        padding-top:0 !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:92% !important;
-        max-width:92% !important;
-        display:block !important;
-        margin:0 auto !important;
-        object-fit:cover !important;
-        border-radius:24px !important;
-    }
-
-    .titulo_inicio,
-    .texto_inicio,
-    .hero-texto{
-        margin-top:24px !important;
-    }
-}
-
-@media(max-width:420px){
-
-    .img_prato,
-    .imagem_principal,
-    .hero-img{
-        margin-top:14px !important;
-    }
-
-    .img_prato img,
-    .imagem_principal img,
-    .hero-img img{
-        width:94% !important;
-        max-width:94% !important;
-    }
+    .table th{font-size:11px}
+    .table td{font-size:13px}
 }
