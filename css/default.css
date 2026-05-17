@@ -731,51 +731,56 @@ body{
 }
 
 
+
+
 /* =========================================================
-   CORREÇÃO DEFINITIVA ESPAÇO HEADER MOBILE
+   AJUSTE RESPONSIVO MOBILE SEM CORTAR IMAGEM
    ========================================================= */
 
 @media(max-width:700px){
 
     header{
         position:relative !important;
-        z-index:999 !important;
-        padding-bottom:34px !important;
+        padding-bottom:18px !important;
     }
 
-    .container_inicio,
-    .inicio,
-    .hero,
-    .principal,
-    main{
+    .img_prato,
+    .imagem_principal,
+    .hero-img{
+        margin-top:18px !important;
         padding-top:0 !important;
-        margin-top:0 !important;
     }
 
-    .img_prato{
+    .img_prato img,
+    .imagem_principal img,
+    .hero-img img{
+        width:92% !important;
+        max-width:92% !important;
         display:block !important;
-        margin-top:34px !important;
-        padding:0 18px !important;
-        box-sizing:border-box !important;
-    }
-
-    .img_prato img{
-        display:block !important;
-        width:100% !important;
         margin:0 auto !important;
+        object-fit:cover !important;
+        border-radius:24px !important;
+    }
 
-        border-radius:26px !important;
+    .titulo_inicio,
+    .texto_inicio,
+    .hero-texto{
+        margin-top:24px !important;
     }
 }
 
 @media(max-width:420px){
 
-    header{
-        padding-bottom:40px !important;
+    .img_prato,
+    .imagem_principal,
+    .hero-img{
+        margin-top:14px !important;
     }
 
-    .img_prato{
-        margin-top:40px !important;
-        padding:0 16px !important;
+    .img_prato img,
+    .imagem_principal img,
+    .hero-img img{
+        width:94% !important;
+        max-width:94% !important;
     }
 }

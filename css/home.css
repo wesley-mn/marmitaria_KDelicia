@@ -288,3 +288,56 @@
         width:92vw !important;
     }
 }
+
+
+/* =========================================================
+   AJUSTE RESPONSIVO MOBILE SEM CORTAR IMAGEM
+   ========================================================= */
+
+@media(max-width:700px){
+
+    header{
+        position:relative !important;
+        padding-bottom:18px !important;
+    }
+
+    .img_prato,
+    .imagem_principal,
+    .hero-img{
+        margin-top:18px !important;
+        padding-top:0 !important;
+    }
+
+    .img_prato img,
+    .imagem_principal img,
+    .hero-img img{
+        width:92% !important;
+        max-width:92% !important;
+        display:block !important;
+        margin:0 auto !important;
+        object-fit:cover !important;
+        border-radius:24px !important;
+    }
+
+    .titulo_inicio,
+    .texto_inicio,
+    .hero-texto{
+        margin-top:24px !important;
+    }
+}
+
+@media(max-width:420px){
+
+    .img_prato,
+    .imagem_principal,
+    .hero-img{
+        margin-top:14px !important;
+    }
+
+    .img_prato img,
+    .imagem_principal img,
+    .hero-img img{
+        width:94% !important;
+        max-width:94% !important;
+    }
+}
