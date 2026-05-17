@@ -729,3 +729,53 @@ body{
         margin-top:10px !important;
     }
 }
+
+
+/* =========================================================
+   CORREÇÃO DEFINITIVA ESPAÇO HEADER MOBILE
+   ========================================================= */
+
+@media(max-width:700px){
+
+    header{
+        position:relative !important;
+        z-index:999 !important;
+        padding-bottom:34px !important;
+    }
+
+    .container_inicio,
+    .inicio,
+    .hero,
+    .principal,
+    main{
+        padding-top:0 !important;
+        margin-top:0 !important;
+    }
+
+    .img_prato{
+        display:block !important;
+        margin-top:34px !important;
+        padding:0 18px !important;
+        box-sizing:border-box !important;
+    }
+
+    .img_prato img{
+        display:block !important;
+        width:100% !important;
+        margin:0 auto !important;
+
+        border-radius:26px !important;
+    }
+}
+
+@media(max-width:420px){
+
+    header{
+        padding-bottom:40px !important;
+    }
+
+    .img_prato{
+        margin-top:40px !important;
+        padding:0 16px !important;
+    }
+}
