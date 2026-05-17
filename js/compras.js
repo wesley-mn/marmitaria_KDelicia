@@ -152,9 +152,9 @@ function finalizar() {
     });
 
     msg += `%0ATotal: R$ ${total.toFixed(2).replace('.', ',')}%0A`;
-    msg += `Entrega: ${document.getElementById('inp-entrega').value}%0A(Valor da entrega deve ser confirmada com o atendente!)`;
+    msg += `Entrega: ${document.getElementById('inp-entrega').value}%0A`;
     msg += `Pagamento: ${document.getElementById('inp-pag').value}%0A`;
-    msg += `Nome: ${nome} | Tel: ${tel}`;
+    msg += `Nome: ${nome} | Tel: ${tel}`;    
 
     const endBox = document.getElementById('end-box');
     if (endBox.style.display !== 'none') {
