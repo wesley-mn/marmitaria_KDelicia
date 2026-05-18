@@ -53,7 +53,7 @@ a{
     min-height:100px;
     margin:0;
     padding:10px clamp(18px,5vw,80px);
-    position:fixed;
+    position:sticky;
     top:0;
     z-index:9999;
     display:grid;
