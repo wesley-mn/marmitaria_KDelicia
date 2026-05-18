@@ -1,3 +1,5 @@
+
+
 const cardapioDiario = {
     0: [],
     1: ['Frango a Parmegiana', 'Bisteca a Milanesa', 'Bife a Cavalo'],
@@ -26,6 +28,11 @@ const produtos = [
 ];
 
 let carrinho = {};
+
+const BASEROW_TABLE_ID = '982863';
+const BASEROW_TOKEN = 'DLS95MsaCNqn23Elncldv3fR8TAOqgwh';
+
+const BASEROW_URL = `https://api.baserow.io/api/database/rows/table/${BASEROW_TABLE_ID}/?user_field_names=true`;
 
 function renderProdutos() {
     const diaSemana = new Date().getDay();
@@ -132,12 +139,42 @@ function renderCarrinho() {
     formEl.style.display  = 'block';
 }
 
-function finalizar() {
+
+
+async function finalizar() {
     const nome = document.getElementById('inp-nome').value.trim();
     const tel  = document.getElementById('inp-tel').value.trim();
 
-    if (!nome || !tel) { alert('Preencha nome e telefone!'); return; }
-    if (Object.keys(carrinho).length === 0) { alert('Carrinho vazio!'); return; }
+    if (!nome || !tel) {
+        alert('Preencha nome e telefone!');
+        return;
+    }
+
+    if (Object.keys(carrinho).length === 0) {
+        alert('Carrinho vazio!');
+        return;
+    }
+
+    const cliente = {
+        Nome: nome,
+        Telefone: tel,
+        Data: new Date().toISOString()
+    };
+
+    try {
+        await fetch(BASEROW_URL, {
+            method: 'POST',
+            headers: {
+                'Authorization': `Token ${BASEROW_TOKEN}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(cliente)
+        });
+    } catch (erro) {
+        console.error('Erro ao salvar cliente no Baserow:', erro);
+        alert('Erro ao salvar cliente no banco de dados.');
+        return;
+    }
 
     let msg   = `Olá! Gostaria de fazer um pedido:%0A%0A`;
     let total = 0;
@@ -147,27 +184,24 @@ function finalizar() {
         const sub = p.preco * carrinho[k].qtd;
         total += sub;
 
-        const carneInfo = carrinho[k].carne ? ` (${carrinho[k].carne})` : '';
-        msg += `- ${carrinho[k].qtd}x ${p.nome}${carneInfo}: R$ ${sub.toFixed(2).replace('.', ',')}%0A`;
+        msg += `- ${carrinho[k].qtd}x ${p.nome}`;
+
+        if (carrinho[k].carne) {
+            msg += ` (${carrinho[k].carne})`;
+        }
+
+        msg += `: R$ ${sub.toFixed(2).replace('.', ',')}%0A`;
     });
 
-    msg += `%0ATotal: R$ ${total.toFixed(2).replace('.', ',')}%0A`;
-    msg += `Entrega: ${document.getElementById('inp-entrega').value}%0A(Valor da entrega deve ser confirmada com o atendente!)`;
-    msg += `Pagamento: ${document.getElementById('inp-pag').value}%0A`;
-    msg += `Nome: ${nome} | Tel: ${tel}`;
+    msg += `%0ATotal: R$ ${total.toFixed(2).replace('.', ',')}`;
+    msg += `%0ANome: ${nome}`;
+    msg += `%0ATelefone: ${tel}`;
 
-    const endBox = document.getElementById('end-box');
-    if (endBox.style.display !== 'none') {
-        msg += `%0AEndereço: ${document.getElementById('inp-end').value}`;
-    }
-
-    document.getElementById('carr-box').style.display = 'none';
-    document.getElementById('sucesso').style.display  = 'block';
-
-    setTimeout(() => {
-        window.open(`https://wa.me/554197340920?text=${msg}`, '_blank');
-    }, 800);
+    window.open(`https://wa.me/554197340920?text=${msg}`, '_blank');
 }
+
+
+
 
 function novoPedido() {
     carrinho = {};
