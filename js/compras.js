@@ -5,7 +5,7 @@ const cardapioDiario = {
     1: ['Bisteca Acebolada', 'Coxinha de Frango Crocante'],
     2: ['Bife Acebolado', 'Bisteca na Chapa', 'Sobrecoxa ao Molho'],
     3: ['Bisteca a Milanesa', 'Almôndegas', 'Fricassê de Frango'],
-    4: ['Bisteca a Cavalo', 'Filé de Frango KFC', 'Bife a Parmegiana'],
+    4: ['Bisteca Grelhada', 'Filé de Frango KFC', 'Linguiça Assada'],
     5: ['Feijoada', 'Strogonoff de Carne', 'Filé de Frango a Parmegiana'],
     6: ['Feijoada', 'Filé de Frango a Parmegiana', 'Filé de Frango KFC', 'Bife a Parmegiana', 'Bife a Milanesa'],
 };
