@@ -2,7 +2,7 @@
 
 const cardapioDiario = {
     0: [],
-    1: ['Tirinhas de Alcatra Acebolada', 'Coxinha de Frango na Mostarda'],
+    1: ['Bisteca Grelhada', 'Filé de Frango KFC', 'Filé de Frango a Parmegiana'],
     2: ['Bisteca Grelhada', 'Filé de Frango KFC', 'Filé de Frango a Parmegiana'],
     3: ['Bisteca a Milanesa', 'Coxa e Sobrecoxa ao Molho', 'Fígado Acebolado'],
     4: ['Almôndegas ao Molho Parmegiana', 'Bisteca Acebolada', 'Filé de Frango a Milanesa'],
