@@ -7,7 +7,7 @@ const cardapioDiario = {
     3: ['Escondidinho de Frango', 'Filé de Frango a KFC', 'Contra Filé Acebolado'],
     4: ['Bisteca a Cavalo', 'Filé de Frango a Milanesa', 'Carne Moída com Legumes'],
     5: ['Feijoada', 'Frango a Passarinho na Mostarda', 'Bisteca a Parmegiana', 'Bisteca Grelhada'],
-    6: ['Feijoada', 'Contra Filé Acebolado', 'Filé de Frango a Parmegiana', 'Filé de Frango a Milanesa'],
+    6: ['Filé de Frango a Parmegiana', 'Bisteca a Parmegiana', 'Bisteca Grelhada', 'Contra Filé a Cavalo', 'Feijoada'],
 };
 
 const diasNome = ['Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sábado'];
